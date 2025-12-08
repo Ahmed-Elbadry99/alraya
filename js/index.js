@@ -424,7 +424,7 @@ $(".ourPartners-carousel").owlCarousel({
     items: 6,
     dots: false,
     margin: 0,
-    // autoplay: true,
+    autoplay: true,
     autoplayTimeout: 2500,
     autoplaySpeed: 2500, 
     slideTransition: 'linear', 

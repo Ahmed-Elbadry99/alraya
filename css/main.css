@@ -322,13 +322,16 @@ select {
 }
 
 /*! ======================= Equipment ======================= */
+#equipment {
+    padding-block: 50px;
+}
 #equipment .items {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-block: 50px;
     flex-wrap: wrap;
     gap: 20px;
+    padding-block: 40px;
 }
 #equipment .items .item {
     width: 200px;
@@ -356,6 +359,9 @@ select {
     align-items: center;
     flex-direction: column;
     gap: 20px;
+}
+#equipment .items .item .circle h5 {
+    color: var(--color-black);
 }
 #equipment .items .item .circle img {
     width: 200px;
@@ -510,7 +516,7 @@ select {
 .cards-projects .my-card .content {
     position: absolute;
     left: 50%;
-    top:60%;
+    top: 60%;
     transform: translate(-50%,-50%);
     width: 90%;
     background-color: var(--color-white);
@@ -965,3 +971,15 @@ textarea:focus {
 /* #serviceRequest .select-group .arrow-icon {
     width: 10px;
 } */
+
+/*! ======================= Conditions ======================= */
+#conditions .text {
+    padding-block: 50px;
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#conditions .text p {
+    line-height: 2;
+}
