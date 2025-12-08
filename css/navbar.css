@@ -189,6 +189,7 @@ nav .boxs .box {
 }
 nav .boxs .box:nth-child(2) {
     flex: 1;
+    justify-content: start;
 }
 nav .boxs .box ul {
     display: flex;
@@ -203,6 +204,10 @@ nav .boxs .box li {
     font-size: 13px;
     font-weight: 500;
     padding-block: 5px;
+}
+.box.first-box button a {
+    text-decoration: underline;
+    padding: 0;
 }
 nav .boxs .box li button {
     color: var(--color-white);
