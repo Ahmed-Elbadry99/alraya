@@ -1,0 +1,214 @@
+
+
+/*! الخطوط */
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/*! الألوان الرئيسية */
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --main-color: #BB5D0C;
+    --second-color: #F78F35;
+    --text-color: #323232;
+    --main-shadow: 0 4px 10px rgb(0 0 0 / 25%);
+}
+
+body {
+    font-family: "Kufam", sans-serif;
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+button:focus,
+a {
+    outline: none;
+}
+button {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+/* h2 {
+    font-size: 20px;
+} */
+/* h3 {
+    font-size: 20px;
+    font-weight: 700;
+} */
+
+h4 {
+    font-size: 22px;
+    font-weight: 700;
+}
+h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+h6 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    /* padding-left: 80px; */
+    word-spacing: 4px;
+    line-height: 1.7;
+}
+img {
+    width: 100%;
+}
+
+
+/*! Globals */
+.main-title {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    /* padding-block: 7px; */
+}
+.main-title::before,
+.main-title::after {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 3px;
+    background-color: var(--main-color);
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s;
+}
+.main-title::after {
+    width: 25%;
+    bottom: -15px;
+}
+h2.title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--second-color);
+}
+.main-title:hover::before {
+    width: 100%;
+}
+.main-title:hover::after {
+    width: 60%;
+}
+.my-container {
+    width: 90%;
+    margin: auto;
+}
+.main-btn {
+    background-color: var(--main-color);
+    color: var(--color-white);
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+.second-btn {
+    background-color: var(--second-color);
+    border: 1px solid var(--second-color);
+}
+.main-btn ,
+.second-btn  {
+    position: relative;
+    z-index: 2;
+    transition: 0.3s;
+}
+.main-btn * ,
+.second-btn *  {
+    position: relative;
+    z-index: 3;
+    transition: 0.3s;
+    font-size: 11px;
+}
+.main-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    transition: 0.5s ease;
+    z-index: 1;
+}
+.main-btn:hover::before {
+    transform: translateX(-100%);
+}
+.main-btn:hover * {
+    color: var(--main-color);
+}
+.second-btn:hover * {
+    color: var(--second-color);
+}
+.show-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-title {
+    padding-top: 40px;
+}
+.sub-title * {
+    font-size: 14px;
+}
+.sub-title h2 span {
+    color: var(--main-color);
+}

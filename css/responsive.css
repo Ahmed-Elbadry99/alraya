@@ -1,0 +1,271 @@
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    .row.cards-projects .my-card .content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 25px;
+    }
+    #contact-us .row-contact-us {
+        flex-direction: column-reverse;
+    }
+        #contact-us .box {
+        width: 90%;
+    }
+    #contact-us .form {
+        width: 90%;
+    }
+    #contact-us ul {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+/* @media (max-width: 1120px) {
+} */
+
+@media (max-width: 991px) {
+    header {
+        height: 100%;
+    }
+    #filter {
+        padding-top: 0;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+    p {
+        font-size: 12px !important;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    #about-us .info h3 {
+        font-size: 20px;
+    }
+    .filter .select-group {
+        width: 100%;
+    }
+    .filter form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .filter form button {
+        margin: 0;
+        font-size: 13px;
+        width: 150px;
+        height: 35px;
+    }
+    /* #about-us .info p {
+        padding-left: 0;
+    } */
+    #about-us .info {
+        width: 100%;
+    }
+    .row-about {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 767px) {
+    /* .row {
+        gap: 40px;
+    } */
+    .services-container {
+        flex-direction: column;
+        /* gap: 80px; */
+    }
+
+    .row-hero .hero-img {
+        width: 90%;
+        left: -33%;
+    }
+    .row.items {
+        gap: 20px;
+    }
+    .numbers .items .item span {
+        font-size: 35px;
+    }
+    .who-we-are .row {
+        gap: 60px;
+    }
+}
+@media (max-width: 650px) {
+    h1 {
+        font-size: 20px;
+    }
+    .explore .nav-tabs .nav-item {
+        width: 25%;
+    }
+    .about-img-container {
+        width: 100%;
+    }
+    .about-img-container .years-experience h3 {
+        font-size: 40px;
+    }
+    .about-img-container .years-experience p {
+        font-size: 15px;
+    }
+    .whatsapp {
+        width: 35px;
+    }
+    .whatsapp-wrapper {
+        right: 35px;
+    }
+    .whatsapp-text {
+        font-size: 10px;
+    }
+    .card-blog {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-blog .image {
+        width: 150px;
+    }
+
+}
+@media (max-width: 575px) {
+    nav .top-bar .logo img {
+        width: 100px;
+    }
+    h2.title {
+        font-size: 20px;
+    }
+    .filter .actions button {
+        padding-block: 15px;
+    }
+    .filter .actions button a {
+        font-size: 14px;
+    }
+    .filter .select-group select {
+        font-size: 14px;
+    }
+    .filter .select-group .arrow-icon {
+        width: 10px;
+    }
+
+    .mailing-list .text h5 {
+        font-size: 25px;
+    }
+    .mailing-list .text .group-input {
+        width: 350px;
+    }
+    .mailing-list .image {
+        width: 300px;
+    }
+}
+@media (max-width: 485px) {
+    p {
+        font-size: 10px !important;
+    }
+    #about-us .info ul h6 {
+        padding-bottom: 5px;
+        font-size: 10px;
+    }
+    #about-us .info ul li::before {
+        width: 3px;
+        height: 3px;
+    }
+    .service-box {
+        width: 350px;
+    }
+    .service-box .frame {
+        padding: 15px;
+    }
+    .service-box .frame h3 {
+        font-size: 15px;
+    }
+    .our-partners .mySwiper {
+        justify-content: space-between;
+    }
+    #contact-us ul li .icon {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+    label {
+        font-size: 10px;
+    }
+    input,
+    form select,
+    form textarea {
+        font-size: 10px !important;
+    }
+    #contact-us ul li .text span:nth-child(1) {
+        font-size: 10px;
+    }
+    #contact-us ul li .text span:nth-child(2) {
+        font-size: 9px;
+    }
+    .filter .nav-tabs .nav-link, .explore .nav-tabs .nav-link {
+        font-size: 12px;
+    }
+    .about-img-container .years-experience h3 {
+        font-size: 25px;
+    }
+    .about-img-container .years-experience p {
+        font-size: 10px;
+    }
+    .main-btn,
+    .second-btn {
+        width: 100px;
+        height: 30px;
+    }
+    .main-btn *,
+    .second-btn * {
+        font-size: 10px;
+    }
+    .filter .nav-tabs .nav-link, .explore .nav-tabs .nav-link {
+        padding-block: 15px;
+    }
+    input, form select, form textarea {
+        padding: 5px;
+    }
+    .form form .group-input, .form form .select-group, form .textarea {
+        gap: 5px;
+    }
+    .who-we-are .main-image {
+        width: 250px;
+    }
+    .who-we-are .main-image::before {
+        width: 285px;
+        height: 220px;
+    }
+    .card-aboutUs .image {
+        width: 270px;
+    }
+    .card-aboutUs .image::before {
+        width: 270px;
+        height: 200px;
+    }
+}
+@media (max-width: 385px) {
+    h1 {
+        font-size: 15px;
+    }
+    .service-box {
+        width: 290px;
+    }
+    .mailing-list .text h5 {
+        font-size: 20px;
+    }
+    .mailing-list .text .group-input {
+        width: 280px;
+    }
+    .mailing-list .text .group-input {
+        height: 40px;
+    }
+    .mailing-list .image {
+        width: 250px;
+    }
+    .about-img-container .years-experience h3 {
+        font-size: 20px;
+    }
+    .about-img-container .years-experience p {
+        font-size: 7px;
+    }
+}

@@ -1,0 +1,187 @@
+
+
+
+footer {
+    background-color: var(--main-color);
+    margin-top: 80px;
+    padding-block: 30px;
+    color: var(--color-white);
+}
+
+footer .content {
+    /* width: 50%; */
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+footer .content p {
+    font-size: 12px;
+    padding-inline: 70px;
+}
+footer .content .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer .content .head .image-logo {
+    width: 150px;
+}
+
+footer .content .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .content .body ul.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .content .body ul.links a {
+    font-weight: 400;
+    padding-inline: 20px;
+    padding-block: 0;
+    border-left: 2px solid #fff;
+}
+footer .content .body ul.links li:last-of-type a {
+    border-left: none;
+}
+
+
+/* Social-Icons */
+footer .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+footer .icons span {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer
+}
+
+footer .icons span a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    text-decoration: none;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+footer .icons span a i {
+    font-size: 18px;
+    position: absolute;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.4s ease;
+}
+footer .icons span::after {
+    content: attr(data-name);
+    position: absolute;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.4s ease;
+    color: #fff;
+    white-space: nowrap;
+}
+footer .icons span:hover {
+    width: 130px;
+    color: #fff;
+    border-radius: 10px;
+}
+footer .icons span:hover a i,
+footer .icons span:hover a img {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+footer .icons span a img {
+    width: 20px;
+}
+footer .icons span:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+}
+footer .icons span.facebook:hover {
+    background-color: #1877F2 !important;
+}
+footer .icons span.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
+}
+footer .icons span.google:hover {
+    /* background: linear-gradient(135deg, #F44336, #FFC107, #43A047, #448AFF); */
+    background-color: var(--color-black);
+    color: #fff;
+}
+footer .icons span.snapchat:hover {
+    background: #FFFC00;
+}
+footer .icons span.snapchat::after {
+    color: #000;
+}
+footer .icons span.twitter:hover {
+    background: #000;
+}
+
+
+/* Heart */
+footer .foot {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer .foot p .heart {
+    color: red;
+    font-size: 16px;
+    display: inline-block;
+    animation: heartIcon 1.5s linear infinite;
+}
+@keyframes heartIcon {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@media (max-width: 767px) {
+    footer .content .head .image-logo {
+        width: 100px;
+    }
+    footer .content p {
+        padding: 0;
+    }
+    footer .content .body ul.links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    footer .content .body ul.links a {
+        border-left: 0;
+    }
+}

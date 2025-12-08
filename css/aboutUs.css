@@ -1,0 +1,152 @@
+/*! ======================= Who We Are ======================= */
+#about-us {
+    overflow: hidden;
+}
+.who-we-are {
+    padding-block: 70px;
+}
+.who-we-are .our-mission,
+.who-we-are .our-vision {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.who-we-are .our-mission .image,
+.who-we-are .our-vision .image {
+    width: 65px;
+    height: 65px;
+}
+.who-we-are .our-mission .text,
+.who-we-are .our-vision .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.vision-mission-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.who-we-are .main-image {
+    width: 340px;
+    margin: auto;
+    position: relative;
+    transition: .5s;
+}
+.who-we-are .main-image::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 280px;
+    background-color: transparent;
+    border: 5px solid var(--second-color);
+    top: -25px;
+    left: -20px;
+    z-index: -1;
+    transition: .5s;
+}
+.who-we-are .main-image:hover::before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/*! ======================= President Section ======================= */
+.president-section {
+    padding-block: 70px;
+}
+.card-aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block: 50px;
+}
+.card-aboutUs .info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 40px;
+}
+.card-aboutUs .image {
+    width: 300px;
+    position: relative;
+}
+.card-aboutUs .image img {
+    transition: .5s;
+}
+.card-aboutUs .image:hover img {
+    transform: scale(1.08);
+}
+.card-aboutUs .image::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 225px;
+    background-color: var(--second-color);
+    top: 30px;
+    right: -20px;
+    z-index: -1;
+}
+.card-aboutUs .info span {
+    font-size: 14px;
+    color: var(--second-color);
+    font-weight: 600;
+    padding-block: 30px;
+}
+/*! ======================= Work-Team ======================= */
+.work-team .card-aboutUs .info p {
+    text-align: start;
+    padding-inline: 10px;
+}
+.work-team .owl-nav {
+    display: none;
+}
+.work-team .owl-dots {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.work-team button.owl-dot {
+    margin: 0 5px;
+}
+.work-team .owl-dot span {
+    display: inline-block;
+    width: 30px;
+    height: 7px;
+    background-color: #bb5e0c57;
+    transition: .5s;
+}
+.work-team button.owl-dot.active span {
+    background-color: #BB5D0C;
+    width: 40px;
+}
+/*! ======================= Numbers  ======================= */
+.numbers {
+    width: 100%;
+    padding: 70px 0;
+    margin-block: 60px;
+    background-image: linear-gradient(#BB5D0C9C 0% 100%) ,url(../assets/images/bg-about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+}
+.numbers .items .item span {
+    font-size: 48px;
+    font-weight: 700;
+}
+/* .numbers .items .item p {
+    font-size: 48px;
+    font-weight: 700;
+} */
