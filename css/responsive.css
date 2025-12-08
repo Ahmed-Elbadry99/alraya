@@ -119,10 +119,10 @@
         /* gap: 80px; */
     }
 
-    .row-hero .hero-img {
+    /* .row-hero .hero-img {
         width: 90%;
         left: -33%;
-    }
+    } */
     .row.items {
         gap: 20px;
     }
@@ -206,6 +206,17 @@
 @media (max-width: 485px) {
     p {
         font-size: 10px !important;
+    }
+    .winch {
+        width: 250px;
+    }
+    .hook {
+        top: -60%;
+    }
+    .container-img {
+        width: 100px;
+        right: -26px;
+        top: 39%;
     }
     .service-box .frame h3 {
         font-size: 15px;

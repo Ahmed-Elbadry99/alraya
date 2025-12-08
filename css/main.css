@@ -10,11 +10,7 @@ header {
     align-items: center;
     padding-block: 50px;
 }
-.row-hero .hero-img {
-    width: 114%;
-    position: relative;
-    left: -20%;
-}
+
 .row-hero .container-btn {
     display: flex;
     align-items: center;
@@ -25,6 +21,74 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*! ************* Animation **************/
+.row-hero .hero-img {
+    width: 111%;
+    position: relative;
+    /* background-color: aquamarine; */
+    overflow: hidden;
+}
+.winch {
+    width: 350px;
+    /* background: aqua; */
+    margin-right: auto;
+    position: relative;
+}
+.winch > img {
+    position: relative;
+    z-index: 5;
+}
+.hook {
+    position: absolute;
+    top: -23%;
+    right: 3px;
+    z-index: 0;
+    height: 100%;
+    width: 20px;
+    /* background: aqua; */
+    overflow: hidden;
+    /* background-image: url(../assets/images/hook.svg); */
+    /* background-repeat: repeat-y; */
+    /* height: 100%; */
+}
+.container-img {
+    position: absolute;
+    top: 48%;
+    right: -51px;
+    width: 165px;
+    transform: translateX(15%);
+}
+
+/* ================= Animation ================= */
+.hook,
+.container-img img {
+    animation: hook 5s ease-in-out infinite;
+}
+@keyframes hook {
+    0% {
+        transform: translateY(70px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(70px);
+    }
 }
 /*! ======================= Filter ======================= */
 #filter {
