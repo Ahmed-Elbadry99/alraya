@@ -39,16 +39,15 @@ closeMenu.addEventListener('click', () => {
     menu.classList.remove('show');
 });
 
-// Active
-// Dynamic Active Link
+// Active Link Navbar
 const currentPage = window.location.pathname.split("/").pop(); 
-const navLinks = document.querySelectorAll(".bottom-bar .links li a");
+const navLinks = document.querySelectorAll("nav ul.links li a");
 
 navLinks.forEach(link => {
     const linkPage = link.getAttribute("href");
 
     if (linkPage === currentPage) {
-        document.querySelectorAll(".bottom-bar .links li").forEach(li => {
+        document.querySelectorAll(".bottom-bar ul.links li").forEach(li => {
             li.classList.remove("active");
         });
 
@@ -56,20 +55,15 @@ navLinks.forEach(link => {
     }
 });
 
-
-
-
-
-
 // Active Link
-const navItems = document.querySelectorAll("ul.links li");
+// const navItems = document.querySelectorAll("ul.links li");
 
-navItems.forEach(item => {
-    item.addEventListener("click", () => {
-        navItems.forEach(i => i.classList.remove("active"));
-        item.classList.add("active");
-    });
-});
+// navItems.forEach(item => {
+//     item.addEventListener("click", () => {
+//         navItems.forEach(i => i.classList.remove("active"));
+//         item.classList.add("active");
+//     });
+// });
 
 //قفل المينيو لما اضغط براها
 document.addEventListener('click', (e) => {
@@ -112,32 +106,32 @@ document.addEventListener('click', (e) => {
 });
 
 
-// tabs
-document.querySelectorAll('.tab-pane').forEach(tab => {
-    const firstBoxItems = tab.querySelectorAll('.first-box ul li');
-    const secondBoxItems = tab.querySelectorAll('.second-box ul li');
+//****************************** بتاعت الدروب داون بتاعت المعدات ف النافبار (Tabs) ****************************** 
+// document.querySelectorAll('.tab-pane').forEach(tab => {
+//     const firstBoxItems = tab.querySelectorAll('.first-box ul li');
+//     const secondBoxItems = tab.querySelectorAll('.second-box ul li');
 
-    firstBoxItems.forEach(item => {
-        item.addEventListener('click', () => {
+//     firstBoxItems.forEach(item => {
+//         item.addEventListener('click', () => {
 
-            firstBoxItems.forEach(i => i.classList.remove('active'));
-            item.classList.add('active');
+//             firstBoxItems.forEach(i => i.classList.remove('active'));
+//             item.classList.add('active');
 
-            const target = item.dataset.target;
+//             const target = item.dataset.target;
 
-            secondBoxItems.forEach(i => {
-                if (target === 'all' || i.classList.contains(target)) {
-                    i.style.display = 'block';
-                } else {
-                    i.style.display = 'none';
-                }
-            });
-        });
-    });
-});
+//             secondBoxItems.forEach(i => {
+//                 if (target === 'all' || i.classList.contains(target)) {
+//                     i.style.display = 'block';
+//                 } else {
+//                     i.style.display = 'none';
+//                 }
+//             });
+//         });
+//     });
+// });
 
 
-//! Overlay
+// Overlay Navbar-Responsive
 const overlay = document.querySelector('.overlay');
 
 showMenu.addEventListener('click', () => {
@@ -157,21 +151,6 @@ document.addEventListener('click', (e) => {
     }
 });
 
-//! Select-Option (active)
-// const actionGroups = document.querySelectorAll('.actions');
-
-// actionGroups.forEach(group => {
-//     const btns = group.querySelectorAll('button');
-//     btns.forEach(btn => {
-//         btn.addEventListener('click', (e) => {
-//             e.preventDefault();
-//             btns.forEach(b => b.classList.remove('active'));
-//             btn.classList.add('active');
-//         });
-//     });
-// });
-
-
 // swiper
 document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper(".my-new-slider", {
@@ -190,124 +169,231 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 });
-// swiper
 
-//! Section Filter
+// //! =========================== Section Filter ===========================
+// //? ***************** فورم الإيجار *****************
+// const rentSubCategories = {
+//     "الرافعات": [
+//         "أجزاء ومعدات رافعات",
+//         "رافعات صالحة لكل أنواع الطرق",
+//         "رافعات مجنزرة",
+//         "رافعات الطرق الوعرة",
+//         "المصاعد والرافعات المادية",
+//         "رافعات برجية",
+//         "رافعات صغيرة",
+//         "رافعات ذاتية الإرتفاع",
+//         "رافعات أخرى"
+//     ],
+//     "معدات الحفر": [
+//         "حفارات كبيرة",
+//         "حفارات صغيرة",
+//         "معدات الحفر اليدوية",
+//         "معدات الحفر الثقيلة"
+//     ],
+//     "معدات البناء والحفر": [
+//         "خلاطات خرسانة",
+//         "رافعات البناء",
+//         "معدات تسوية الأرض",
+//         "معدات الحفر الصغيرة"
+//     ],
+//     "معدات الطرق": [
+//         "معدات الطرق",
+//         "آلات تعبيد",
+//         "معدات صيانة الطرق",
+//         "رافعات طرقية"
+//     ]
+// };
 
-//? ***************** فورم الإيجار *****************
-const rentSubCategories = {
-    "الرافعات": [
-        "أجزاء ومعدات رافعات",
-        "رافعات صالحة لكل أنواع الطرق",
-        "رافعات مجنزرة",
-        "رافعات الطرق الوعرة",
-        "المصاعد والرافعات المادية",
-        "رافعات برجية",
-        "رافعات صغيرة",
-        "رافعات ذاتية الإرتفاع",
-        "رافعات أخرى"
-    ],
-    "معدات الحفر": [
-        "حفارات كبيرة",
-        "حفارات صغيرة",
-        "معدات الحفر اليدوية",
-        "معدات الحفر الثقيلة"
-    ],
-    "معدات البناء والحفر": [
-        "خلاطات خرسانة",
-        "رافعات البناء",
-        "معدات تسوية الأرض",
-        "معدات الحفر الصغيرة"
-    ],
-    "معدات الطرق": [
-        "معدات الطرق",
-        "آلات تعبيد",
-        "معدات صيانة الطرق",
-        "رافعات طرقية"
-    ]
-};
+// // نجيب الـ selects
+// const rentMainSelect = document.querySelector('.select-group:nth-of-type(1) select');
+// const rentSubSelect = document.querySelector('.select-group:nth-of-type(2) select');
 
-// نجيب الـ selects
-const rentMainSelect = document.querySelector('.select-group:nth-of-type(1) select');
-const rentSubSelect = document.querySelector('.select-group:nth-of-type(2) select');
+// // تغيير التصنيف الرئيسي → تحديث الفرعي
+// rentMainSelect.addEventListener('change', () => {
+//     const selected = rentMainSelect.value;
+//     rentSubSelect.innerHTML = "";
 
-// تغيير التصنيف الرئيسي → تحديث الفرعي
-rentMainSelect.addEventListener('change', () => {
-    const selected = rentMainSelect.value;
-    rentSubSelect.innerHTML = "";
+//     if (rentSubCategories[selected]) {
+//         rentSubCategories[selected].forEach(item => {
+//             const option = document.createElement('option');
+//             option.value = item;
+//             option.textContent = item;
+//             rentSubSelect.appendChild(option);
+//         });
+//     }
+//     rentMainSelect.dispatchEvent(new Event("change"));
+// });
 
-    if (rentSubCategories[selected]) {
-        rentSubCategories[selected].forEach(item => {
-            const option = document.createElement('option');
-            option.value = item;
-            option.textContent = item;
-            rentSubSelect.appendChild(option);
+// //? ***************** فورم البيع *****************
+// const sellSubCategories = {
+//     "الرافعات": [
+//         "أجزاء ومعدات رافعات",
+//         "رافعات صالحة لكل أنواع الطرق",
+//         "رافعات مجنزرة",
+//         "رافعات الطرق الوعرة",
+//         "المصاعد والرافعات المادية",
+//         "رافعات برجية",
+//         "رافعات صغيرة",
+//         "رافعات ذاتية الإرتفاع",
+//         "رافعات أخرى"
+//     ],
+//     "معدات الحفر": [
+//         "حفارات صغيرة",
+//         "حفارات جنزير",
+//         "حفارات هيدروليك",
+//         "حفارات دوارة"
+//     ],
+//     "معدات البناء والحفر": [
+//         "معدات خرسانة",
+//         "معدات صب",
+//         "معدات تسوية",
+//         "معدات دمك"
+//     ],
+//     "معدات الطرق": [
+//         "مداحل",
+//         "معدات تخطيط",
+//         "معدات رصف"
+//     ]
+// };
+
+// // نجيب الـ selects
+// const sellMainSelect = document.querySelector("#sell-main");
+// const sellSubSelect = document.querySelector("#sell-sub");
+
+// // تغيير التصنيف الرئيسي → تحديث الفرعي
+// sellMainSelect.addEventListener("change", () => {
+//     const selected = sellMainSelect.value;
+//     sellSubSelect.innerHTML = "";
+
+//     if (sellSubCategories[selected]) {
+//         sellSubCategories[selected].forEach(item => {
+//             const option = document.createElement("option");
+//             option.value = item;
+//             option.textContent = item;
+//             sellSubSelect.appendChild(option);
+//         });
+//     }
+//     sellMainSelect.dispatchEvent(new Event("change"));
+// });
+
+//! =========================== Section Filter ===========================
+document.addEventListener("DOMContentLoaded", function () {
+
+    //? ***************** فورم الإيجار *****************
+    const rentMainSelect = document.querySelector('.select-group:nth-of-type(1) select');
+    const rentSubSelect = document.querySelector('.select-group:nth-of-type(2) select');
+
+    if (rentMainSelect && rentSubSelect) {
+        const rentSubCategories = {
+            "الرافعات": [
+                "أجزاء ومعدات رافعات",
+                "رافعات صالحة لكل أنواع الطرق",
+                "رافعات مجنزرة",
+                "رافعات الطرق الوعرة",
+                "المصاعد والرافعات المادية",
+                "رافعات برجية",
+                "رافعات صغيرة",
+                "رافعات ذاتية الإرتفاع",
+                "رافعات أخرى"
+            ],
+            "معدات الحفر": [
+                "حفارات كبيرة",
+                "حفارات صغيرة",
+                "معدات الحفر اليدوية",
+                "معدات الحفر الثقيلة"
+            ],
+            "معدات البناء والحفر": [
+                "خلاطات خرسانة",
+                "رافعات البناء",
+                "معدات تسوية الأرض",
+                "معدات الحفر الصغيرة"
+            ],
+            "معدات الطرق": [
+                "معدات الطرق",
+                "آلات تعبيد",
+                "معدات صيانة الطرق",
+                "رافعات طرقية"
+            ]
+        };
+
+        // تغيير التصنيف الرئيسي → تحديث الفرعي
+        rentMainSelect.addEventListener('change', () => {
+            const selected = rentMainSelect.value;
+            rentSubSelect.innerHTML = "";
+
+            if (rentSubCategories[selected]) {
+                rentSubCategories[selected].forEach(item => {
+                    const option = document.createElement('option');
+                    option.value = item;
+                    option.textContent = item;
+                    rentSubSelect.appendChild(option);
+                });
+            }
         });
+
+        // تفعيل الاختيار لأول مرة
+        rentMainSelect.dispatchEvent(new Event("change"));
     }
-    rentMainSelect.dispatchEvent(new Event("change"));
+
+    //? ***************** فورم البيع *****************
+    const sellMainSelect = document.querySelector("#sell-main");
+    const sellSubSelect = document.querySelector("#sell-sub");
+
+    if (sellMainSelect && sellSubSelect) {
+        const sellSubCategories = {
+            "الرافعات": [
+                "أجزاء ومعدات رافعات",
+                "رافعات صالحة لكل أنواع الطرق",
+                "رافعات مجنزرة",
+                "رافعات الطرق الوعرة",
+                "المصاعد والرافعات المادية",
+                "رافعات برجية",
+                "رافعات صغيرة",
+                "رافعات ذاتية الإرتفاع",
+                "رافعات أخرى"
+            ],
+            "معدات الحفر": [
+                "حفارات صغيرة",
+                "حفارات جنزير",
+                "حفارات هيدروليك",
+                "حفارات دوارة"
+            ],
+            "معدات البناء والحفر": [
+                "معدات خرسانة",
+                "معدات صب",
+                "معدات تسوية",
+                "معدات دمك"
+            ],
+            "معدات الطرق": [
+                "مداحل",
+                "معدات تخطيط",
+                "معدات رصف"
+            ]
+        };
+
+        // تغيير التصنيف الرئيسي → تحديث الفرعي
+        sellMainSelect.addEventListener("change", () => {
+            const selected = sellMainSelect.value;
+            sellSubSelect.innerHTML = "";
+
+            if (sellSubCategories[selected]) {
+                sellSubCategories[selected].forEach(item => {
+                    const option = document.createElement("option");
+                    option.value = item;
+                    option.textContent = item;
+                    sellSubSelect.appendChild(option);
+                });
+            }
+        });
+
+        // تفعيل الاختيار لأول مرة
+        sellMainSelect.dispatchEvent(new Event("change"));
+    }
+
 });
 
-// املى الفرعي لأول مرة
 
-
-//? ***************** فورم البيع *****************
-const sellSubCategories = {
-    "الرافعات": [
-        "أجزاء ومعدات رافعات",
-        "رافعات صالحة لكل أنواع الطرق",
-        "رافعات مجنزرة",
-        "رافعات الطرق الوعرة",
-        "المصاعد والرافعات المادية",
-        "رافعات برجية",
-        "رافعات صغيرة",
-        "رافعات ذاتية الإرتفاع",
-        "رافعات أخرى"
-    ],
-    "معدات الحفر": [
-        "حفارات صغيرة",
-        "حفارات جنزير",
-        "حفارات هيدروليك",
-        "حفارات دوارة"
-    ],
-    "معدات البناء والحفر": [
-        "معدات خرسانة",
-        "معدات صب",
-        "معدات تسوية",
-        "معدات دمك"
-    ],
-    "معدات الطرق": [
-        "مداحل",
-        "معدات تخطيط",
-        "معدات رصف"
-    ]
-};
-
-
-
-// نجيب الـ selects
-const sellMainSelect = document.querySelector("#sell-main");
-const sellSubSelect = document.querySelector("#sell-sub");
-
-// تغيير التصنيف الرئيسي → تحديث الفرعي
-sellMainSelect.addEventListener("change", () => {
-    const selected = sellMainSelect.value;
-    sellSubSelect.innerHTML = "";
-
-    if (sellSubCategories[selected]) {
-        sellSubCategories[selected].forEach(item => {
-            const option = document.createElement("option");
-            option.value = item;
-            option.textContent = item;
-            sellSubSelect.appendChild(option);
-        });
-    }
-    sellMainSelect.dispatchEvent(new Event("change"));
-});
-
-// املى الفرعي لأول مرة 
-
-
-//! Owl Carousel (Blog)
+//! =========================== Owl Carousel (Blog) ===========================
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         loop:true,
@@ -331,7 +417,7 @@ $(document).ready(function(){
     });
 });
 
-//! Owl (our-partners)
+//! =========================== Owl (our-partners) ===========================
 $(".ourPartners-carousel").owlCarousel({
     loop: true,
     nav: false,

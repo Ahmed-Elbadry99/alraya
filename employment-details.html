@@ -37,7 +37,7 @@
 
     <main>
 
-        <!-- href="https://wa.me/201067492171" -->
+        <!-- href="https://wa.me/" -->
         <div class="whatsapp-wrapper">
             <a href="" target="_blank" class="whatsapp">
                 <img src="./assets/images/whatsapp-icon.svg" alt="">
@@ -55,37 +55,37 @@
                 <nav class="responsive-Menu">
                     <div class="nav-content responsive">
                         <ul class="links">
-                            <li class="active direct-hover">
+                            <li class="direct-hover">
                                 <i class="fas fa-home"></i>
-                                <a href="./index.html">الصفحة الرئيسية</a>
+                                <a href="index.html">الصفحة الرئيسية</a>
                             </li>
                             <li class="direct-hover">
                                 <i class="fas fa-users"></i>
-                                <a href="./aboutus.html">من نحن</a>
+                                <a href="aboutus.html">من نحن</a>
                             </li>
                             <li class="direct-hover">
                                 <i class="fas fa-concierge-bell"></i>
-                                <a href="./services.html">الخدمات</a>
+                                <a href="services.html">الخدمات</a>
                             </li>
                             <li class="direct-hover">
                                 <i class="fas fa-tools"></i>
-                                <a href="./equipment.html">المعدات</a>
+                                <a href="equipment.html">المعدات</a>
                             </li>
                             <li class="direct-hover">
                                 <i class="fas fa-project-diagram"></i>
-                                <a href="./projects.html">المشاريع والاعمال</a>
+                                <a href="projects.html">المشاريع والاعمال</a>
                             </li>
                             <li class="direct-hover">
                                 <i class="fas fa-blog"></i>
-                                <a href="./blog.html">المدونة</a>
+                                <a href="blog.html">المدونة</a>
                             </li>
                             <li class="direct-hover">
                                 <i class="fas fa-user-tie"></i>
-                                <a href="./employment.html">التوظيف</a>
+                                <a href="employment.html">التوظيف</a>
                             </li>
                             <li class="direct-hover">
                                 <i class="fas fa-phone-alt"></i>
-                                <a href="./contact-us.html">تواصل معنا</a>
+                                <a href="contact-us.html">تواصل معنا</a>
                             </li>
                         </ul>
 
@@ -142,11 +142,11 @@
                     <div class="bottom-bar">
                         <div class="my-container">
                             <ul class="links">
-                                <li class="active direct-hover">
-                                    <a href="./index.html">الصفحة الرئيسية</a>
+                                <li class="direct-hover">
+                                    <a href="index.html">الصفحة الرئيسية</a>
                                 </li>
                                 <li class="direct-hover">
-                                    <a href="./aboutus.html">من نحن</a>
+                                    <a href="aboutus.html">من نحن</a>
                                 </li>
 
                                 <li class="dropdown services direct-hover">
@@ -187,91 +187,203 @@
 
                                             <!-- تاب الايجار -->
                                             <div class="tab-pane fade show active" id="rent" role="tabpanel">
+
                                                 <div class="boxs">
+
+                                                    <!-- البوكس الأول → أزرار Tabs -->
                                                     <div class="box first-box">
-                                                        <ul>
-                                                            <li data-target="rafaat">
-                                                                رافعات
-                                                                <!-- <a href="equipment.html">رافعات</a> -->
+                                                        <ul class="nav flex-column" role="tablist">
+
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#rent-rafaat">
+                                                                    رافعات
+                                                                </button>
                                                             </li>
-                                                            <li data-target="loaders">
-                                                                لوادر
-                                                                <!-- <a href="equipment.html">لوادر</a> -->
+
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#rent-loaders">
+                                                                    لوادر
+                                                                </button>
                                                             </li>
-                                                            <li data-target="equipment">
-                                                                معدات حفر
-                                                                <!-- <a href="equipment.html"> معدات حفر</a> -->
+
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#rent-equipment">
+                                                                    معدات حفر
+                                                                </button>
                                                             </li>
-                                                            <li data-target="excavators">
-                                                                حفارات
-                                                                <!-- <a href="equipment.html">حفارات</a> -->
+
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#rent-excavators">
+                                                                    حفارات
+                                                                </button>
                                                             </li>
-                                                            <li data-target="tractors">
-                                                                جرارات تسوية
-                                                                <!-- <a href="equipment.html"> جرارات تسوية</a> -->
+
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#rent-tractors">
+                                                                    جرارات تسوية
+                                                                </button>
                                                             </li>
-                                                            <li data-target="all">
-                                                                عرض الكل
-                                                                <!-- <a href="equipment.html"> عرض الكل</a> -->
+
+                                                            <li class="nav-item" role="presentation">
+                                                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#rent-all">
+                                                                    عرض الكل
+                                                                </button>
                                                             </li>
+
                                                         </ul>
                                                     </div>
 
-                                                    <div class="box second-box">
-                                                        <ul>
-                                                            <li class="rafaat">رافعات صغيرة</li>
-                                                            <li class="loaders">لوادر كبيرة</li>
-                                                            <li class="equipment">حفارات مجنزرة</li>
-                                                            <li class="excavators">حفارات صغيرة</li>
-                                                            <li class="equipment">معدات رفع</li>
-                                                            <li class="tractors">جرارات طرق وعرة</li>
-                                                        </ul>
+                                                    <!-- البوكس الثاني → المحتوى -->
+                                                    <div class="box second-box tab-content">
+
+                                                        <div class="tab-pane fade show active" id="rent-rafaat">
+                                                            <ul>
+                                                                <li>رافعات صغيرة</li>
+                                                                <li>رافعات كبيرة</li>
+                                                                <li>رافعات مجنزرة</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="tab-pane fade" id="rent-loaders">
+                                                            <ul>
+                                                                <li>لوادر كبيرة</li>
+                                                                <li>لوادر صغيرة</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="tab-pane fade" id="rent-equipment">
+                                                            <ul>
+                                                                <li>حفارات مجنزرة</li>
+                                                                <li>معدات رفع</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="tab-pane fade" id="rent-excavators">
+                                                            <ul>
+                                                                <li>حفارات صغيرة</li>
+                                                                <li>حفارات كبيرة</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="tab-pane fade" id="rent-tractors">
+                                                            <ul>
+                                                                <li>جرارات طرق وعرة</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="tab-pane fade" id="rent-all">
+                                                            <ul>
+                                                                <li>رافعات</li>
+                                                                <li>لوادر</li>
+                                                                <li>معدات حفر</li>
+                                                                <li>حفارات</li>
+                                                                <li>جرارات</li>
+                                                            </ul>
+                                                        </div>
+
                                                     </div>
                                                 </div>
+
                                             </div>
 
                                             <!-- تاب البيع -->
                                             <div class="tab-pane fade" id="sell" role="tabpanel">
+
                                                 <div class="boxs">
+
+                                                    <!-- البوكس الأول بيع -->
                                                     <div class="box first-box">
-                                                        <ul>
-                                                            <li data-target="rafaat">
-                                                                رافعات للبيع
-                                                                <!-- <a href="equipment.html">رافعات للبيع</a> -->
+                                                        <ul class="nav flex-column">
+
+                                                            <li class="nav-item">
+                                                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#sell-rafaat">
+                                                                    رافعات للبيع
+                                                                </button>
                                                             </li>
-                                                            <li data-target="loaders">
-                                                                لوادر للبيع
-                                                                <!-- <a href="equipment.html">لوادر للبيع</a> -->
+
+                                                            <li class="nav-item">
+                                                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#sell-loaders">
+                                                                    لوادر للبيع
+                                                                </button>
                                                             </li>
-                                                            <li data-target="equipment">
-                                                                معدات حفر للبيع
-                                                                <!-- <a href="equipment.html"> معدات حفر للبيع</a> -->
+
+                                                            <li class="nav-item">
+                                                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#sell-equipment">
+                                                                    معدات حفر للبيع
+                                                                </button>
                                                             </li>
-                                                            <li data-target="excavators">
-                                                                حفارات للبيع
-                                                                <!-- <a href="equipment.html">حفارات للبيع</a> -->
+
+                                                            <li class="nav-item">
+                                                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#sell-excavators">
+                                                                    حفارات للبيع
+                                                                </button>
                                                             </li>
-                                                            <li data-target="tractors">
-                                                                 جرارات تسوية للبيع
-                                                                <!-- <a href="equipment.html"> جرارات تسوية للبيع</a> -->
+
+                                                            <li class="nav-item">
+                                                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#sell-tractors">
+                                                                    جرارات تسوية للبيع
+                                                                </button>
                                                             </li>
-                                                            <li data-target="all">
-                                                                عرض الكل
-                                                                <!-- <a href="equipment.html"> عرض الكل</a> -->
+
+                                                            <li class="nav-item">
+                                                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#sell-all">
+                                                                    عرض الكل
+                                                                </button>
                                                             </li>
+
                                                         </ul>
                                                     </div>
-                                                    <div class="box second-box">
-                                                        <ul>
-                                                            <li class="rafaat">رافعات برجية للبيع</li>
-                                                            <li class="rafaat">رافعات مجنزة للبيع</li>
-                                                            <li class="rafaat">رافعات صغيرة للبيع</li>
-                                                            <li class="rafaat">رافعات ذاتية الارتفاع للبيع</li>
-                                                            <li class="equipment">معدات طرق وعرة للبيع</li>
-                                                            <li class="excavators">حفارات مجنزرة للبيع</li>
-                                                        </ul>
+
+                                                    <!-- البوكس الثاني بيع -->
+                                                    <div class="box second-box tab-content">
+
+                                                        <div class="tab-pane fade show active" id="sell-rafaat">
+                                                            <ul>
+                                                                <li>رافعات برجية للبيع</li>
+                                                                <li>رافعات مجنزرة للبيع</li>
+                                                                <li>رافعات صغيرة للبيع</li>
+                                                                <li>رافعات ذاتية الارتفاع للبيع</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="tab-pane fade" id="sell-loaders">
+                                                            <ul>
+                                                                <li>لوادر كبيرة للبيع</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="tab-pane fade" id="sell-equipment">
+                                                            <ul>
+                                                                <li>معدات طرق وعرة للبيع</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="tab-pane fade" id="sell-excavators">
+                                                            <ul>
+                                                                <li>حفارات مجنزرة للبيع</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="tab-pane fade" id="sell-tractors">
+                                                            <ul>
+                                                                <li>جرارات تسوية للبيع</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="tab-pane fade" id="sell-all">
+                                                            <ul>
+                                                                <li>رافعات</li>
+                                                                <li>لوادر</li>
+                                                                <li>معدات حفر</li>
+                                                                <li>حفارات</li>
+                                                                <li>جرارات</li>
+                                                            </ul>
+                                                        </div>
+
                                                     </div>
+
                                                 </div>
+
                                             </div>
 
                                         </div>
@@ -536,6 +648,7 @@
                     <div class="modal-header">
                         <h5 class="modal-title">طلب خدمة</h5>
                     </div>
+
                     <div class="modal-body">
 
                         <form>
@@ -569,7 +682,7 @@
                                         </div>
                                         <label for="">نوع المشروع</label>
                                         <select>
-                                            <option value="اختر نوع المشروع" disabled selected></option>
+                                            <!-- <option value="اختر نوع المشروع" selected></option> -->
                                             <option>مشاريع حفر</option>
                                             <option>مشاريع الطرق</option>
                                             <option>مشاريع البنية التحتية</option>
@@ -646,7 +759,7 @@
                                         </div>
                                         <label for="">نوع الخدمة المطلوبة</label>
                                         <select>
-                                            <option value="اختر نوع المشروع" disabled selected></option>
+                                            <!-- <option value="اختر نوع المشروع" disabled selected></option> -->
                                             <option>بيع</option>
                                             <option>تاجير</option>
                                         </select>
@@ -659,7 +772,7 @@
                                         </div>
                                         <label for="">مجال المشروع</label>
                                         <select>
-                                            <option value="اختر نوع المشروع" disabled selected></option>
+                                            <!-- <option value="اختر نوع المشروع" disabled selected></option> -->
                                             <option>مشاريع حفر</option>
                                             <option>مشاريع الطرق</option>
                                             <option>مشاريع البنية التحتية</option>

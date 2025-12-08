@@ -15,14 +15,12 @@ function startCount(el) {
 }
 
 window.addEventListener("scroll", () => {
-  // اتأكدي إن السيكشن متعرف وموجود
   if (!section) return;
 
-  // لو السيكشن دخل الشاشة
   if (window.scrollY >= section.offsetTop - 400) {
     if (!started) {
       nums.forEach((num) => startCount(num));
-      started = true; // مهم يتحط جوه نفس الشرط
+      started = true;
     }
   }
 });
@@ -33,7 +31,7 @@ AOS.init();
 $(".workTeam-carousel").owlCarousel({
   loop: true,
   margin: 20,
-  // autoplay: true,
+  autoplay: true,
   autoplayTimeout: 2500,
   autoplaySpeed: 2500,
   dots: true,

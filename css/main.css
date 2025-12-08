@@ -738,6 +738,11 @@ textarea:focus {
     display: flex;
     gap: 5px;
 }
+#contact-us ul li:hover .icon {
+    background-color: var(--color-white);
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
 #contact-us ul li .text {
     display: flex;
     flex-direction: column;
@@ -763,6 +768,8 @@ textarea:focus {
     align-items: center;
     color: var(--color-white);
     border-radius: 50%;
+    border:  1px solid transparent;
+    transition: .5s;
 }
 #contact-us iframe {
     height: 100%;

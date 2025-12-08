@@ -72,9 +72,13 @@
     }
 }
 @media (max-width: 767px) {
-    /* .row {
+    .row {
         gap: 40px;
-    } */
+    }
+    .row.services-container,
+    .row.cards-projects {
+        gap: 0;
+    }
     .services-container {
         flex-direction: column;
         /* gap: 80px; */

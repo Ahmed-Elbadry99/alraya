@@ -21,6 +21,10 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+::selection {
+    background-color: var(--second-color);
+    color: var(--color-white);
+}
 
 ul {
     list-style: none;

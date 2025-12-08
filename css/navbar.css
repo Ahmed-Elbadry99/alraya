@@ -97,7 +97,7 @@ nav ul.links li.direct-hover::before {
     right: 0;
     width: 0;
     height: 3px;
-    background-color: var(--second-color);
+    background-color: var(--color-white);
     transition: .5s;
 }
 nav ul.links li.direct-hover:hover::before,
@@ -185,7 +185,7 @@ nav .boxs {
 nav .boxs .box {
     background-color: #FFFFFF14;
     padding: 20px 15px;
-    width: 170px;
+    width: 200px;
 }
 nav .boxs .box:nth-child(2) {
     flex: 1;
@@ -194,18 +194,24 @@ nav .boxs .box ul {
     display: flex;
     flex-direction: column;
     /* gap: 10px; */
+    width: 100%;
+}
+nav .boxs .box.second-box ul {
+    gap: 10px;
 }
 nav .boxs .box li {
     font-size: 13px;
     font-weight: 500;
-    padding: 10px;
-    width: 100%;
+    padding-block: 5px;
 }
-
-nav .boxs .box ul li:hover {
+nav .boxs .box li button {
+    color: var(--color-white);
+    width: 100%;
+    text-align: start;
+}
+nav .boxs .box li button.active {
     background-color: #F78F35;
 }
-
 /*! ***************** Responsive-Menu ***************** */
 nav.responsive-Menu .dropdown-menu {
     top: 20px;
@@ -297,7 +303,7 @@ nav.responsive-Menu .nav-content ul.links li::before {
     right: 0;
     width: 0;
     height: 3px;
-    background-color: var(--second-color);
+    background-color: var(--color-white);
     transition: .5s;
 }
 nav.responsive-Menu .nav-content ul.links li.active::before {
