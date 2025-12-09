@@ -102,9 +102,15 @@ h3 {
     padding-block: 30px;
 }
 /*! ======================= Work-Team ======================= */
+.work-team {
+    padding-block: 40px;
+}
+.work-team .owl-stage-outer {
+    padding-bottom: 0;
+}
 .work-team .card-aboutUs .info p {
     text-align: start;
-    padding-inline: 10px;
+    padding-inline: 20px;
 }
 .work-team .owl-nav {
     display: none;

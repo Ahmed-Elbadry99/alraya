@@ -23,20 +23,7 @@ header {
     gap: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*! ************* Animation **************/
+/*! ************* Animation-Images **************/
 .row-hero .hero-img {
     width: 111%;
     position: relative;
@@ -52,6 +39,7 @@ header {
 .winch > img {
     position: relative;
     z-index: 5;
+    padding-bottom: 5px;
 }
 .hook {
     position: absolute;
@@ -77,19 +65,56 @@ header {
 /* ================= Animation ================= */
 .hook,
 .container-img img {
-    animation: hook 5s ease-in-out infinite;
+    transform: translateY(-70px);
+    animation: hook 6s ease-in-out infinite;
 }
+
+/* transform: translateY(-70px); فوق */
+/* transform: translateY(70px); تحت */
+
 @keyframes hook {
     0% {
-        transform: translateY(70px);
+        transform: translateY(-70px); /* فوق */
     }
-    50% {
-        transform: translateY(-20px);
+    40% {
+        transform: translateY(-70px);
+    }
+    55% {
+        transform: translateY(70px); /* بتنزل */
+    }
+    70% {
+        transform: translateY(70px); /* واقفة تحت */
     }
     100% {
-        transform: translateY(70px);
+        transform: translateY(-70px); /* فوق */
     }
 }
+
+/* الأرض */
+.land {
+    width: 500px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 20px;
+    z-index: -1;
+    animation: slide 6s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0;
+    }
+    40% {
+        background-position-x: -400px; /* مشيت */
+    }
+
+    100% {
+        background-position-x: -400px; /* وقفت */
+    }
+}
+
 /*! ======================= Filter ======================= */
 #filter {
     padding-block: 50px;
@@ -210,6 +235,9 @@ select {
 } */
 
 /*! ======================= About-US ======================= */
+#about-us {
+    padding-top: 5px;
+}
 .row-about {
     padding-block: 55px;
     gap: 30px;
@@ -932,7 +960,7 @@ textarea:focus {
     transform: translateX(20px);
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
-.whatsapp-wrapper:hover .whatsapp-text {
+.whatsapp:hover + .whatsapp-text {
     opacity: 1;
     transform: translateX(0);
 }

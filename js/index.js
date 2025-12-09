@@ -460,3 +460,14 @@ function toggleFilter(el) {
 }
 
 // filter box equipment end
+
+
+// !ايقاف ال AOS ف الموبايل 
+// if (window.innerWidth < 768) {
+//     AOS.init({
+//         disable: true
+//     });
+//     }
+//     else {
+//     AOS.init();
+// }

@@ -4,7 +4,6 @@
         font-size: 12px;
     }
 }
-
 @media (max-width: 1200px) {
     h1 {
         font-size: 25px;
@@ -24,10 +23,6 @@
         flex-wrap: wrap;
     }
 }
-
-/* @media (max-width: 1120px) {
-} */
-
 @media (max-width: 991px) {
     header {
         height: 100%;
@@ -47,9 +42,6 @@
     }
     .row-about {
         padding-bottom: 0;
-    }
-    #about-us .info h3 {
-        font-size: 16px;
     }
     #equipment {
         padding-top: 0;
@@ -82,8 +74,42 @@
     .mailing-list {
         padding-block: 80px 0;
     }
+    #about-us .info h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    footer {
+        margin-top: 0;
+    }
+    .president-section {
+        padding-block: 20px;
+    }
+    .work-team .owl-stage-outer {
+        padding-block: 20px;
+    }
+    .president-section {
+        padding-bottom: 0;
+    }
+    .card-aboutUs {
+        padding-block: 50px 0;
+    }
+    .our-partners {
+        padding-block: 80px 0;
+    }
+    #equipment .row {
+        gap: 0;
+    }
+    .employment-details {
+        padding-bottom: 40px;
+    }
 }
-@media (max-width: 767px) {
+@media (max-width: 830px) {
+    #about-us .info h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+@media (max-width: 768px) {
     /* Stop-Hover */
     .main-btn:hover::before {
         transform: none !important;
@@ -105,8 +131,47 @@
     #equipment .items .item:hover::before {
         top: 20px;
     }
+    .whatsapp-wrapper:hover .whatsapp-text {
+        opacity: 0 !important;
+        transform: translateX(20px) !important;
+    }
+    .who-we-are {
+        padding-top: 0;
+    }
+    .who-we-are .main-image:hover::before {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    footer .icons span:hover {
+        width: 30px !important;
+        border-radius: 50% !important;
+        background-color: #fff !important;
+        color: var(--main-color) !important;
+    }
+    footer .icons span.facebook:hover,
+    footer .icons span.instagram:hover {
+        background-color: #fff !important;
+        background: #fff !important;
+    }
+    footer .icons span:hover a i,
+    footer .icons span:hover a img {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+    }
+    footer .icons span:hover::after {
+        opacity: 0 !important;
+        transform: translateX(20px) !important;
+    }
 
-    
+
+    /* ****************************************************** */
+    h2.title {
+        font-size: 18px;
+        font-weight: 700;
+    }
     .row {
         gap: 40px;
     }
@@ -114,14 +179,8 @@
     .row.cards-projects {
         gap: 0;
     }
-    .services-container {
+    /* .services-container {
         flex-direction: column;
-        /* gap: 80px; */
-    }
-
-    /* .row-hero .hero-img {
-        width: 90%;
-        left: -33%;
     } */
     .row.items {
         gap: 20px;
@@ -131,6 +190,12 @@
     }
     .who-we-are .row {
         gap: 60px;
+    }
+    .explore .nav-tabs {
+        padding-top: 20px;
+    }
+    .explore .row {
+        gap: 10px 0;
     }
 }
 @media (max-width: 650px) {
@@ -171,14 +236,21 @@
     .mailing-list .image {
         width: 200px;
     }
+    .lang-menu {
+        top: 26px;
+        right: -25px;
+    }
+    .lang-menu li {
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: .2s;
+        font-size: 10px;
+    }
 
 }
 @media (max-width: 575px) {
     nav .top-bar .logo img {
         width: 100px;
-    }
-    h2.title {
-        font-size: 18px;
     }
     .filter .actions button {
         padding-block: 15px;
@@ -202,6 +274,26 @@
     /* .mailing-list .image {
         width: 300px;
     } */
+    #about-us .info h3 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    h2.title {
+        font-size: 14px;
+    }
+    #about-us .info ul {
+        gap: 0;
+    }
+    footer .icons span {
+        width: 30px;
+        height: 30px;
+    }
+    footer .icons span a i {
+        font-size: 14px;
+    }
+    footer .icons span a img {
+        font-size: 16px;
+    }
 }
 @media (max-width: 485px) {
     p {
@@ -222,7 +314,7 @@
         font-size: 15px;
     }
     #about-us .info h3 {
-        font-size: 14px;
+        font-size: 16px;
     }
     #about-us .info ul h6 {
         padding-bottom: 5px;
@@ -240,7 +332,7 @@
         padding: 15px;
     }
     .service-box .frame h3 {
-        font-size: 15px;
+        font-size: 13px;
     }
     .our-partners .mySwiper {
         justify-content: space-between;
@@ -273,6 +365,9 @@
     .about-img-container .years-experience p {
         font-size: 10px;
     }
+    #about-us .info ul li p {
+        font-size: 8px !important;
+    }
     .main-btn,
     .second-btn {
         width: 100px;
@@ -295,7 +390,7 @@
         width: 250px;
     }
     .who-we-are .main-image::before {
-        width: 285px;
+        width: 220px;
         height: 220px;
     }
     .card-aboutUs .image {
