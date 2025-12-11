@@ -74,7 +74,7 @@ document.addEventListener('click', (e) => {
 
 
 // Dropdown-Menu
-const dropdowns = document.querySelectorAll('.bottom-bar li.dropdown > a');
+const dropdowns = document.querySelectorAll('li.dropdown > a');
 
 dropdowns.forEach(link => {
     const menu = link.parentElement.querySelector('.dropdown-menu');

@@ -9,6 +9,7 @@ header {
 .row-hero {
     align-items: center;
     padding-block: 50px;
+    justify-content: end;
 }
 
 .row-hero .container-btn {
@@ -36,6 +37,17 @@ header {
     margin-right: auto;
     position: relative;
 }
+.winch::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    top: -17px;
+    right: -20px;
+    z-index: 9;
+    transform: rotate(35deg);
+}
 .winch > img {
     position: relative;
     z-index: 5;
@@ -56,10 +68,11 @@ header {
 }
 .container-img {
     position: absolute;
-    top: 48%;
-    right: -51px;
+    top: 47%;
+    right: -54px;
     width: 165px;
     transform: translateX(15%);
+    z-index: 9;
 }
 
 /* ================= Animation ================= */
@@ -240,7 +253,7 @@ select {
 }
 .row-about {
     padding-block: 55px;
-    gap: 30px;
+    gap: 40px;
 }
 #about-us .info {
     display: flex;
@@ -788,6 +801,7 @@ form textarea {
     border: 1px solid transparent;
     transition: .3s;
     padding: 10px;
+    height: 40px;
     font-size: 12px !important;
 }
 form textarea {
@@ -979,6 +993,7 @@ textarea:focus {
     justify-content: center;
     align-items: center;
 }
+
 .modal-content .close-icon {
     position: absolute;
     top: 20px;
@@ -991,7 +1006,8 @@ textarea:focus {
     color: var(--second-color);
 }
 #serviceRequest .modal-content,
-#priceRequest .modal-content {
+#priceRequest .modal-content,
+#apply-job .modal-content {
     border-radius: 0;
     /* width: 600px; */
     padding: 10px 15px;
@@ -1005,6 +1021,10 @@ textarea:focus {
     font-size: 10px;
     /* padding-bottom: 13px; */
     font-weight: 700;
+}
+#serviceRequest .modal-body .group-inputs {
+    justify-content: center;
+    align-items: end;
 }
 .modal-body .group-inputs {
     display: flex;
@@ -1029,7 +1049,7 @@ textarea:focus {
     flex-direction: column;
     gap: 15px;
 }
-.service-details .select-group {
+#priceRequest .service-details .select-group {
     width: 100%;
     gap: 5px;
 }
@@ -1063,6 +1083,9 @@ textarea:focus {
 /* #serviceRequest .select-group .arrow-icon {
     width: 10px;
 } */
+#apply-job .file-name {
+    font-size: 9px;
+}
 
 /*! ======================= Conditions ======================= */
 #conditions .text {
@@ -1074,4 +1097,25 @@ textarea:focus {
 }
 #conditions .text p {
     line-height: 2;
+}
+/* *************************************** */
+.equipment .filter-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 1px;
+    background-color: #e4e4e4c9;
+}
+.employment .card-content ,
+.equipment .card-content {
+    padding: 20px;
+}
+.equipment .card-content .title-content > h6 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

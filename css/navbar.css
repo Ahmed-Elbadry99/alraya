@@ -197,9 +197,9 @@ nav .boxs .box ul {
     /* gap: 10px; */
     width: 100%;
 }
-nav .boxs .box.second-box ul {
+/* nav .boxs .box.second-box ul {
     gap: 10px;
-}
+} */
 nav .boxs .box li {
     font-size: 13px;
     font-weight: 500;
