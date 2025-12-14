@@ -447,7 +447,8 @@ $(".ourPartners-carousel").owlCarousel({
 
 // filter box equipment
 function openFilterBox() {
-    if (window.innerWidth <= 1024) {
+    // if (window.innerWidth <= 1024) {
+    if (window.innerWidth <= 1200) {
         const box = document.querySelector(".filter-box");
         box.style.display = box.style.display === "block" ? "none" : "block";
     }

@@ -354,6 +354,7 @@
     cursor:pointer;
     position:relative;
     padding: 20px;
+    width: 90%;
 }
 .equipment .filter-title::before{
 content:"\2039";
@@ -388,16 +389,16 @@ transform:translateY(-50%) rotate(90deg);
     gap: 5px;
 }
 .equipment .filter-options label{
-font-size:15px;
-display:flex;
-align-items:center;
-gap:6px;
+    font-size:15px;
+    display:flex;
+    align-items:center;
+    gap:6px;
 }
 .equipment .filter-options select{
-width:100%;
-padding:6px;
-border:1px solid #ccc;
-border-radius:4px;
+    width:100%;
+    padding:6px;
+    border:1px solid #ccc;
+    border-radius:4px;
 }
 @media(max-width:1200px){
     .equipment .filter-item {

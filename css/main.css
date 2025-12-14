@@ -1103,7 +1103,7 @@ textarea:focus {
 #conditions .text p {
     line-height: 2;
 }
-/* *************************************** */
+/* Nour.CSS */
 .equipment .filter-item::after {
     content: "";
     position: absolute;
@@ -1131,4 +1131,16 @@ textarea:focus {
 .equipment .card-content .title-content .marka span,
 .equipment-details .item-content-down .card-content .marka span {
     font-size: 12px;
+}
+@media (max-width: 1200px) {
+    .equipment .filter-box {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .equipment .filter-box {
+        width: 90%;
+        margin: 10px 0;
+    }
 }
