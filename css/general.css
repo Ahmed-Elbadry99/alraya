@@ -3,6 +3,14 @@
 /*! الخطوط */
 @import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
 
+/* @font-face {
+    font-family: "Font Awesome 6 Free";
+    src: url("../webfonts/fa-solid-900.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+} */
+
 
 /*! الألوان الرئيسية */
 :root {

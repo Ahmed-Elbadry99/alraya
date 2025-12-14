@@ -8,13 +8,12 @@
     <link rel="shortcut icon" href="./assets/images/logo-white.svg" type="image/x-icon">
     <!-- fontawesome-->
     <link rel="stylesheet" href="./css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
     <!-- bootstrap css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <!-- AOS library Css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <!-- Swiper CSS -->
@@ -34,11 +33,10 @@
 <body>
 
     <main>
-
         <!-- href="https://wa.me/" -->
         <div class="whatsapp-wrapper">
             <a href="" target="_blank" class="whatsapp">
-                <img src="./assets/images/whatsapp-icon.svg" alt="">
+                <img src="./assets/images/whatsapp-icon.svg" alt="img">
             </a>
             <span class="whatsapp-text">تواصل معنا الآن!</span>
         </div>
@@ -108,7 +106,7 @@
                         <div class="my-container">
                             <div class="logo">
                                 <a href="./index.html">
-                                    <img src="./assets/images/logo.svg" alt="">
+                                    <img src="./assets/images/logo.svg" alt="img">
                                 </a>
                             </div>
 
@@ -120,7 +118,7 @@
 
                                 <div class="lang-dropdown">
                                     <div class="lang-trigger">
-                                        <img src="./assets/images/en.svg" alt="">
+                                        <img src="./assets/images/en.svg" alt="img">
                                         <p>عربية</p>
                                     </div>
 
@@ -475,20 +473,32 @@
                     <div class="col-lg-6">
                         <div class="hero-img">  <!-- مش هيطلع من براه الأنيمشن -->
 
+                            <!--
+                            -- fetchpriority="high"
+                            ده يخلي المتصفح يبدأ يحمل الصورة فورًا
+                            مهم جدًا لـ LCP -->
+
                             <div class="winch"> <!-- صورة الونش -->
-                                <img src="./assets/images/winch.svg" alt="">
+                                <img src="./assets/images/winch.webp" alt="img" fetchpriority="high" >
                                 <div class="hook"> <!-- صورة الهوك -->
-                                    <img src="./assets/images/hook-2.svg" alt="">
+                                    <img src="./assets/images/hook-2.svg" alt="img" fetchpriority="high">
                                 </div>
                                 <div class="container-img"> <!-- صورة الحاوية -->
-                                    <img src="./assets/images/container.svg" alt="">
+                                    <img src="./assets/images/container.svg" alt="img" fetchpriority="high">
                                 </div>
                             </div>
 
                             <div class="land"
-                                style=" background: url(./assets/images/Vector.png); background-size: contain;">
-                                <!-- <img src="./assets/images/land.svg" alt=""> -->
+                                style=" background: url(./assets/images/Vector.webp); background-size: contain;">
                             </div>
+
+                            <!-- <div class="land">
+                                <img 
+                                    src="./assets/images/Vector.webp"
+                                    alt="land"
+                                    fetchpriority="high"
+                                    loading="eager">
+                            </div> -->
 
                         </div>
                     </div>
@@ -527,7 +537,7 @@
                                 <div class="select-group">
                                     <label>اختر التصنيف الرئيسى</label>
                                     <div class="arrow-icon">
-                                        <img src="./assets/images/arrow-bottom.svg" alt="">
+                                        <img src="./assets/images/arrow-bottom.svg" alt="img">
                                     </div>
                                     <select>
                                         <option>الرافعات</option>
@@ -540,7 +550,7 @@
                                 <div class="select-group">
                                     <label>اختر التصنيف الفرعى</label>
                                     <div class="arrow-icon">
-                                        <img src="./assets/images/arrow-bottom.svg" alt="">
+                                        <img src="./assets/images/arrow-bottom.svg" alt="img">
                                     </div>
                                     <select>
                                         <option>أجزاء ومعدات رافعات</option>
@@ -568,7 +578,7 @@
                                 <div class="select-group">
                                     <label>اختر التصنيف الرئيسى</label>
                                     <div class="arrow-icon">
-                                        <img src="./assets/images/arrow-bottom.svg" alt="">
+                                        <img src="./assets/images/arrow-bottom.svg" alt="img">
                                     </div>
                                     <select id="sell-main">
                                         <option value="الرافعات">الرافعات</option>
@@ -581,7 +591,7 @@
                                 <div class="select-group">
                                     <label>اختر التصنيف الفرعى</label>
                                     <div class="arrow-icon">
-                                        <img src="./assets/images/arrow-bottom.svg" alt="">
+                                        <img src="./assets/images/arrow-bottom.svg" alt="img">
                                     </div>
                                     <select id="sell-sub">
                                         <option>أجزاء ومعدات رافعات</option>
@@ -648,9 +658,9 @@
                                     <h3>+13</h3>
                                     <p>سنة خبرة</p>
                                 </div>
-                                <img src="./assets/images/about-1.png" class="img-1" alt="">
+                                <img src="./assets/images/about-1.webp" class="img-1" alt="img">
                             </div>
-                            <img src="./assets/images/about-2.png" class="img-2" alt="">
+                            <img src="./assets/images/about-2.webp" class="img-2" alt="img">
                         </div>
                     </div>
                 </div>
@@ -667,7 +677,7 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="service-box" data-aos="flip-up" data-aos-duration="1500">
                             <div class="frame">
-                                <img src="./assets/images/services-1.png" alt="">
+                                <img src="./assets/images/services-1.webp" alt="img">
                                 <h3>تأجير المعدات الثقيلة</h3>
                                 <div class="desc">
                                     <p>
@@ -684,7 +694,7 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="service-box" data-aos="flip-up" data-aos-duration="1500">
                             <div class="frame">
-                                <img src="./assets/images/services-2.png" alt="">
+                                <img src="./assets/images/services-2.webp" alt="img">
                                 <h3>بيع المعدات الثقيلة</h3>
                                 <div class="desc">
                                     <p>
@@ -701,7 +711,7 @@
                     <div class="col-md-6 col-xl-4">
                         <div class="service-box" data-aos="flip-up" data-aos-duration="1500">
                             <div class="frame">
-                                <img src="./assets/images/services-2.png" alt="">
+                                <img src="./assets/images/services-2.webp" alt="img">
                                 <h3>بيع المعدات الثقيلة</h3>
                                 <div class="desc">
                                     <p>
@@ -729,7 +739,7 @@
                     <a href="./equipment-categories.html">
                         <div class="item" data-aos="zoom-in" data-aos-duration="1500">
                             <div class="circle">
-                                <img src="./assets/images/equipment-1.png" alt="">
+                                <img src="./assets/images/equipment-1.webp" alt="img">
                                 <h5>الرافعات</h5>
                             </div>
                         </div>
@@ -738,7 +748,7 @@
                     <a href="./equipment-categories.html">
                         <div class="item" data-aos="zoom-in" data-aos-duration="1500">
                             <div class="circle">
-                                <img src="./assets/images/equipment-2.png" alt="">
+                                <img src="./assets/images/equipment-2.webp" alt="img">
                                 <h5>معدات الحفر</h5>
                             </div>
                         </div>
@@ -746,7 +756,7 @@
                     <a href="./equipment-categories.html">
                         <div class="item" data-aos="zoom-in" data-aos-duration="1500">
                             <div class="circle">
-                                <img src="./assets/images/equipment-3.png" alt="">
+                                <img src="./assets/images/equipment-3.webp" alt="img">
                                 <h5>معدات البناء والتحميل</h5>
                             </div>
                         </div>
@@ -755,7 +765,7 @@
                     <a href="./equipment-categories.html">
                         <div class="item" data-aos="zoom-in" data-aos-duration="1500">
                             <div class="circle">
-                                <img src="./assets/images/equipment-1.png" alt="">
+                                <img src="./assets/images/equipment-1.webp" alt="img">
                                 <h5>الرافعات</h5>
                             </div>
                         </div>
@@ -764,7 +774,7 @@
                     <a href="./equipment-categories.html">
                         <div class="item" data-aos="zoom-in" data-aos-duration="1500">
                             <div class="circle">
-                                <img src="./assets/images/equipment-4.png" alt="">
+                                <img src="./assets/images/equipment-4.webp" alt="img">
                                 <h5>معدات الطرق</h5>
                             </div>
                         </div>
@@ -813,7 +823,7 @@
                                     <a href="equipment-details.html" class="stretched-link"></a>
 
                                     <div class="card-image">
-                                        <img src="./assets/images/explore.png" alt="">
+                                        <img src="./assets/images/explore.webp" alt="img">
                                     </div>
 
                                     <div class="card-content">
@@ -824,15 +834,15 @@
                                             <div class="ul-container">
                                                 <ul class="labels-list">
                                                     <li>
-                                                        <img src="./assets/images/brand.svg" alt="">
+                                                        <img src="./assets/images/brand.svg" alt="img">
                                                         <p>الماركة</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/model.svg" alt="">
+                                                        <img src="./assets/images/model.svg" alt="img">
                                                         <p>المودل</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/hours.svg" alt="">
+                                                        <img src="./assets/images/hours.svg" alt="img">
                                                         <p>ساعات التشغيل</p>
                                                     </li>
                                                 </ul>
@@ -867,7 +877,7 @@
                                     <a href="equipment-details.html" class="stretched-link"></a>
 
                                     <div class="card-image">
-                                        <img src="./assets/images/explore.png" alt="">
+                                        <img src="./assets/images/explore.webp" alt="img">
                                     </div>
 
                                     <div class="card-content">
@@ -878,15 +888,15 @@
                                             <div class="ul-container">
                                                 <ul class="labels-list">
                                                     <li>
-                                                        <img src="./assets/images/brand.svg" alt="">
+                                                        <img src="./assets/images/brand.svg" alt="img">
                                                         <p>الماركة</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/model.svg" alt="">
+                                                        <img src="./assets/images/model.svg" alt="img">
                                                         <p>المودل</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/hours.svg" alt="">
+                                                        <img src="./assets/images/hours.svg" alt="img">
                                                         <p>ساعات التشغيل</p>
                                                     </li>
                                                 </ul>
@@ -921,7 +931,7 @@
                                     <a href="equipment-details.html" class="stretched-link"></a>
 
                                     <div class="card-image">
-                                        <img src="./assets/images/explore.png" alt="">
+                                        <img src="./assets/images/explore.webp" alt="img">
                                     </div>
 
                                     <div class="card-content">
@@ -932,15 +942,15 @@
                                             <div class="ul-container">
                                                 <ul class="labels-list">
                                                     <li>
-                                                        <img src="./assets/images/brand.svg" alt="">
+                                                        <img src="./assets/images/brand.svg" alt="img">
                                                         <p>الماركة</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/model.svg" alt="">
+                                                        <img src="./assets/images/model.svg" alt="img">
                                                         <p>المودل</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/hours.svg" alt="">
+                                                        <img src="./assets/images/hours.svg" alt="img">
                                                         <p>ساعات التشغيل</p>
                                                     </li>
                                                 </ul>
@@ -975,7 +985,7 @@
                                     <a href="equipment-details.html" class="stretched-link"></a>
 
                                     <div class="card-image">
-                                        <img src="./assets/images/explore.png" alt="">
+                                        <img src="./assets/images/explore.webp" alt="img">
                                     </div>
 
                                     <div class="card-content">
@@ -986,15 +996,15 @@
                                             <div class="ul-container">
                                                 <ul class="labels-list">
                                                     <li>
-                                                        <img src="./assets/images/brand.svg" alt="">
+                                                        <img src="./assets/images/brand.svg" alt="img">
                                                         <p>الماركة</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/model.svg" alt="">
+                                                        <img src="./assets/images/model.svg" alt="img">
                                                         <p>المودل</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/hours.svg" alt="">
+                                                        <img src="./assets/images/hours.svg" alt="img">
                                                         <p>ساعات التشغيل</p>
                                                     </li>
                                                 </ul>
@@ -1033,7 +1043,7 @@
                                 data-aos-duration="1500">
                                 <div class="my-card">
                                     <div class="card-image">
-                                        <img src="./assets/images/explore.png" alt="">
+                                        <img src="./assets/images/explore.webp" alt="img">
                                     </div>
                                     <div class="card-content">
                                         <div class="body">
@@ -1043,15 +1053,15 @@
                                             <div class="ul-container">
                                                 <ul class="labels-list">
                                                     <li>
-                                                        <img src="./assets/images/brand.svg" alt="">
+                                                        <img src="./assets/images/brand.svg" alt="img">
                                                         <p>الماركة</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/model.svg" alt="">
+                                                        <img src="./assets/images/model.svg" alt="img">
                                                         <p>المودل</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/hours.svg" alt="">
+                                                        <img src="./assets/images/hours.svg" alt="img">
                                                         <p>ساعات التشغيل</p>
                                                     </li>
                                                 </ul>
@@ -1080,7 +1090,7 @@
                                 data-aos-duration="1500">
                                 <div class="my-card">
                                     <div class="card-image">
-                                        <img src="./assets/images/explore.png" alt="">
+                                        <img src="./assets/images/explore.webp" alt="img">
                                     </div>
                                     <div class="card-content">
                                         <div class="body">
@@ -1090,15 +1100,15 @@
                                             <div class="ul-container">
                                                 <ul class="labels-list">
                                                     <li>
-                                                        <img src="./assets/images/brand.svg" alt="">
+                                                        <img src="./assets/images/brand.svg" alt="img">
                                                         <p>الماركة</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/model.svg" alt="">
+                                                        <img src="./assets/images/model.svg" alt="img">
                                                         <p>المودل</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/hours.svg" alt="">
+                                                        <img src="./assets/images/hours.svg" alt="img">
                                                         <p>ساعات التشغيل</p>
                                                     </li>
                                                 </ul>
@@ -1127,7 +1137,7 @@
                                 data-aos-duration="1500">
                                 <div class="my-card">
                                     <div class="card-image">
-                                        <img src="./assets/images/explore.png" alt="">
+                                        <img src="./assets/images/explore.webp" alt="img">
                                     </div>
                                     <div class="card-content">
                                         <div class="body">
@@ -1137,15 +1147,15 @@
                                             <div class="ul-container">
                                                 <ul class="labels-list">
                                                     <li>
-                                                        <img src="./assets/images/brand.svg" alt="">
+                                                        <img src="./assets/images/brand.svg" alt="img">
                                                         <p>الماركة</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/model.svg" alt="">
+                                                        <img src="./assets/images/model.svg" alt="img">
                                                         <p>المودل</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/hours.svg" alt="">
+                                                        <img src="./assets/images/hours.svg" alt="img">
                                                         <p>ساعات التشغيل</p>
                                                     </li>
                                                 </ul>
@@ -1174,7 +1184,7 @@
                                 data-aos-duration="1500">
                                 <div class="my-card">
                                     <div class="card-image">
-                                        <img src="./assets/images/explore.png" alt="">
+                                        <img src="./assets/images/explore.webp" alt="img">
                                     </div>
                                     <div class="card-content">
                                         <div class="body">
@@ -1184,15 +1194,15 @@
                                             <div class="ul-container">
                                                 <ul class="labels-list">
                                                     <li>
-                                                        <img src="./assets/images/brand.svg" alt="">
+                                                        <img src="./assets/images/brand.svg" alt="img">
                                                         <p>الماركة</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/model.svg" alt="">
+                                                        <img src="./assets/images/model.svg" alt="img">
                                                         <p>المودل</p>
                                                     </li>
                                                     <li>
-                                                        <img src="./assets/images/hours.svg" alt="">
+                                                        <img src="./assets/images/hours.svg" alt="img">
                                                         <p>ساعات التشغيل</p>
                                                     </li>
                                                 </ul>
@@ -1240,7 +1250,7 @@
                     <div class="col-md-6 col-lg-4" data-aos="fade-left" data-aos-duration="1700">
                         <div class="my-card">
                             <div class="image">
-                                <img src="./assets/images/projects-and-business.png" alt="">
+                                <img src="./assets/images/projects-and-business.webp" alt="img">
                             </div>
 
                             <div class="content">
@@ -1250,7 +1260,7 @@
                                 <div class="link-show-more">
                                     <a href="project-details.html">
                                         قراءة المزيد
-                                        <img src="./assets/images/arrow-show-more.svg" alt="">
+                                        <img src="./assets/images/arrow-show-more.svg" alt="img">
                                     </a>
                                 </div>
                             </div>
@@ -1260,7 +1270,7 @@
                     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1700">
                         <div class="my-card">
                             <div class="image">
-                                <img src="./assets/images/projects-and-business.png" alt="">
+                                <img src="./assets/images/projects-and-business.webp" alt="img">
                             </div>
 
                             <div class="content">
@@ -1270,7 +1280,7 @@
                                 <div class="link-show-more">
                                     <a href="project-details.html">
                                         قراءة المزيد
-                                        <img src="./assets/images/arrow-show-more.svg" alt="">
+                                        <img src="./assets/images/arrow-show-more.svg" alt="img">
                                     </a>
                                 </div>
                             </div>
@@ -1280,7 +1290,7 @@
                     <div class="col-md-6 col-lg-4" data-aos="fade-right" data-aos-duration="1700">
                         <div class="my-card">
                             <div class="image">
-                                <img src="./assets/images/projects-and-business.png" alt="">
+                                <img src="./assets/images/projects-and-business.webp" alt="img">
                             </div>
 
                             <div class="content">
@@ -1290,7 +1300,7 @@
                                 <div class="link-show-more">
                                     <a href="project-details.html">
                                         قراءة المزيد
-                                        <img src="./assets/images/arrow-show-more.svg" alt="">
+                                        <img src="./assets/images/arrow-show-more.svg" alt="img">
                                     </a>
                                 </div>
                             </div>
@@ -1320,13 +1330,13 @@
                     <div class="item">
                         <div class="card-blog">
                             <div class="image">
-                                <img src="./assets/images/projects-and-business.png" alt="">
+                                <img src="./assets/images/projects-and-business.webp" alt="img">
                             </div>
                             <div class="info">
                                 <div class="head-info">
                                     <h3>مشاريع البنية التحتية</h3>
                                     <div class="date">
-                                        <img src="./assets/images/date-icon.svg" class="date-icon" alt="">
+                                        <img src="./assets/images/date-icon.svg" class="date-icon" alt="img">
                                         <span>10 مارس 2025</span>
                                     </div>
                                 </div>
@@ -1345,13 +1355,13 @@
                     <div class="item">
                         <div class="card-blog">
                             <div class="image">
-                                <img src="./assets/images/projects-and-business.png" alt="">
+                                <img src="./assets/images/projects-and-business.webp" alt="img">
                             </div>
                             <div class="info">
                                 <div class="head-info">
                                     <h3>مشاريع البنية التحتية</h3>
                                     <div class="date">
-                                        <img src="./assets/images/date-icon.svg" class="date-icon" alt="">
+                                        <img src="./assets/images/date-icon.svg" class="date-icon" alt="img">
                                         <span>10 مارس 2025</span>
                                     </div>
                                 </div>
@@ -1385,37 +1395,37 @@
             <div class="owl-carousel owl-theme ourPartners-carousel">
                 <div class="item">
                     <div class="image">
-                        <img src="./assets/images/our-partners-1.png" alt="">
+                        <img src="./assets/images/our-partners-1.webp" alt="img">
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="image">
-                        <img src="./assets/images/our-partners-2.png" alt="">
+                        <img src="./assets/images/our-partners-2.webp" alt="img">
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="image">
-                        <img src="./assets/images/our-partners-3.png" alt="">
+                        <img src="./assets/images/our-partners-3.webp" alt="img">
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="image">
-                        <img src="./assets/images/our-partners-1.png" alt="">
+                        <img src="./assets/images/our-partners-1.webp" alt="img">
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="image">
-                        <img src="./assets/images/our-partners-2.png" alt="">
+                        <img src="./assets/images/our-partners-2.webp" alt="img">
                     </div>
                 </div>
 
                 <div class="item">
                     <div class="image">
-                        <img src="./assets/images/our-partners-1.png" alt="">
+                        <img src="./assets/images/our-partners-1.webp" alt="img">
                     </div>
                 </div>
             </div>
@@ -1454,7 +1464,7 @@
 
                             <div class="select-group">
                                 <div class="arrow-icon">
-                                    <img src="./assets/images/arrow-bottom.svg" alt="">
+                                    <img src="./assets/images/arrow-bottom.svg" alt="img">
                                 </div>
                                 <label for="">نوع الاستفسار</label>
                                 <select>
@@ -1533,7 +1543,7 @@
 
                 <div class="col-lg-3 col-img">
                     <div class="image">
-                        <img src="./assets/images/mailing-list.png" alt="">
+                        <img src="./assets/images/mailing-list.webp" alt="img">
                     </div>
                 </div>
             </div>
@@ -1544,7 +1554,7 @@
                 <div class="content">
                     <div class="head">
                         <div class="image-logo">
-                            <img src="./assets/images/logo-white.svg" alt="">
+                            <img src="./assets/images/logo-white.svg" alt="img">
                         </div>
                         <div class="text">
                             <p>شركة متخصصة في تأجير المعدات الثقيلة، حيث توفر مجموعة متنوعة من المعدات الحديثة للمشاريع
@@ -1577,7 +1587,7 @@
                         <div class="icons">
                             <span class="snapchat" data-name="Snapchat">
                                 <a href="">
-                                    <img src="./assets/images/snapchat.svg" alt="">
+                                    <img src="./assets/images/snapchat.svg" alt="img">
                                 </a>
                             </span>
                             <span class="twitter" data-name="Twitter">
@@ -1587,7 +1597,7 @@
                             </span>
                             <span class="instagram" data-name="Instagram">
                                 <a href="">
-                                    <img src="./assets/images/instagram.svg" alt="">
+                                    <img src="./assets/images/instagram.svg" alt="img">
                                 </a>
                             </span>
                             <span class="google" data-name="Google">
@@ -1717,7 +1727,7 @@
                                 <div class="group-inputs">
                                     <div class="select-group">
                                         <div class="arrow-icon">
-                                            <img src="./assets/images/arrow-bottom.svg" alt="">
+                                            <img src="./assets/images/arrow-bottom.svg" alt="img">
                                         </div>
                                         <label for="">نوع المشروع</label>
                                         <select>
@@ -1794,7 +1804,7 @@
                                 <div class="group-inputs">
                                     <div class="select-group">
                                         <div class="arrow-icon">
-                                            <img src="./assets/images/arrow-bottom.svg" alt="">
+                                            <img src="./assets/images/arrow-bottom.svg" alt="img">
                                         </div>
                                         <label for="">نوع الخدمة المطلوبة</label>
                                         <select>
@@ -1807,7 +1817,7 @@
                                 <div class="group-inputs">
                                     <div class="select-group">
                                         <div class="arrow-icon">
-                                            <img src="./assets/images/arrow-bottom.svg" alt="">
+                                            <img src="./assets/images/arrow-bottom.svg" alt="img">
                                         </div>
                                         <label for="">مجال المشروع</label>
                                         <select>
@@ -1841,18 +1851,18 @@
 
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
     <!-- Owl library js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
     <!-- AOS library js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
     <!-- GSAP library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
     <!-- bootstrap js -->
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js" defer></script>
     <!-- index js -->
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
 
 </body>
 

@@ -117,13 +117,16 @@ header {
 
 @keyframes slide {
     0% {
+        /* transform: translateX(0); */
         background-position-x: 0;
     }
     40% {
+        /* transform: translateX(-400px); */
         background-position-x: -400px; /* مشيت */
     }
 
     100% {
+        /* transform: translateX(-400px); */
         background-position-x: -400px; /* وقفت */
     }
 }
@@ -322,11 +325,13 @@ select {
 }
 .about-img-container .about-img img.img-1 {
     width: 70%;
+    /* height: 220px; */
     margin-right: auto;
     display: flex;
 }
 .about-img-container .about-img img.img-2 {
     width: 50%;
+    /* height: 160px; */
     position: relative;
     bottom: 60px;
 }
