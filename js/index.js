@@ -55,16 +55,6 @@ navLinks.forEach(link => {
     }
 });
 
-// Active Link
-// const navItems = document.querySelectorAll("ul.links li");
-
-// navItems.forEach(item => {
-//     item.addEventListener("click", () => {
-//         navItems.forEach(i => i.classList.remove("active"));
-//         item.classList.add("active");
-//     });
-// });
-
 //قفل المينيو لما اضغط براها
 document.addEventListener('click', (e) => {
     if (!menu.contains(e.target) && !showMenu.contains(e.target)) {
@@ -106,31 +96,6 @@ document.addEventListener('click', (e) => {
 });
 
 
-//****************************** بتاعت الدروب داون بتاعت المعدات ف النافبار (Tabs) ****************************** 
-// document.querySelectorAll('.tab-pane').forEach(tab => {
-//     const firstBoxItems = tab.querySelectorAll('.first-box ul li');
-//     const secondBoxItems = tab.querySelectorAll('.second-box ul li');
-
-//     firstBoxItems.forEach(item => {
-//         item.addEventListener('click', () => {
-
-//             firstBoxItems.forEach(i => i.classList.remove('active'));
-//             item.classList.add('active');
-
-//             const target = item.dataset.target;
-
-//             secondBoxItems.forEach(i => {
-//                 if (target === 'all' || i.classList.contains(target)) {
-//                     i.style.display = 'block';
-//                 } else {
-//                     i.style.display = 'none';
-//                 }
-//             });
-//         });
-//     });
-// });
-
-
 // Overlay Navbar-Responsive
 const overlay = document.querySelector('.overlay');
 
@@ -169,112 +134,6 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 });
-
-// //! =========================== Section Filter ===========================
-// //? ***************** فورم الإيجار *****************
-// const rentSubCategories = {
-//     "الرافعات": [
-//         "أجزاء ومعدات رافعات",
-//         "رافعات صالحة لكل أنواع الطرق",
-//         "رافعات مجنزرة",
-//         "رافعات الطرق الوعرة",
-//         "المصاعد والرافعات المادية",
-//         "رافعات برجية",
-//         "رافعات صغيرة",
-//         "رافعات ذاتية الإرتفاع",
-//         "رافعات أخرى"
-//     ],
-//     "معدات الحفر": [
-//         "حفارات كبيرة",
-//         "حفارات صغيرة",
-//         "معدات الحفر اليدوية",
-//         "معدات الحفر الثقيلة"
-//     ],
-//     "معدات البناء والحفر": [
-//         "خلاطات خرسانة",
-//         "رافعات البناء",
-//         "معدات تسوية الأرض",
-//         "معدات الحفر الصغيرة"
-//     ],
-//     "معدات الطرق": [
-//         "معدات الطرق",
-//         "آلات تعبيد",
-//         "معدات صيانة الطرق",
-//         "رافعات طرقية"
-//     ]
-// };
-
-// // نجيب الـ selects
-// const rentMainSelect = document.querySelector('.select-group:nth-of-type(1) select');
-// const rentSubSelect = document.querySelector('.select-group:nth-of-type(2) select');
-
-// // تغيير التصنيف الرئيسي → تحديث الفرعي
-// rentMainSelect.addEventListener('change', () => {
-//     const selected = rentMainSelect.value;
-//     rentSubSelect.innerHTML = "";
-
-//     if (rentSubCategories[selected]) {
-//         rentSubCategories[selected].forEach(item => {
-//             const option = document.createElement('option');
-//             option.value = item;
-//             option.textContent = item;
-//             rentSubSelect.appendChild(option);
-//         });
-//     }
-//     rentMainSelect.dispatchEvent(new Event("change"));
-// });
-
-// //? ***************** فورم البيع *****************
-// const sellSubCategories = {
-//     "الرافعات": [
-//         "أجزاء ومعدات رافعات",
-//         "رافعات صالحة لكل أنواع الطرق",
-//         "رافعات مجنزرة",
-//         "رافعات الطرق الوعرة",
-//         "المصاعد والرافعات المادية",
-//         "رافعات برجية",
-//         "رافعات صغيرة",
-//         "رافعات ذاتية الإرتفاع",
-//         "رافعات أخرى"
-//     ],
-//     "معدات الحفر": [
-//         "حفارات صغيرة",
-//         "حفارات جنزير",
-//         "حفارات هيدروليك",
-//         "حفارات دوارة"
-//     ],
-//     "معدات البناء والحفر": [
-//         "معدات خرسانة",
-//         "معدات صب",
-//         "معدات تسوية",
-//         "معدات دمك"
-//     ],
-//     "معدات الطرق": [
-//         "مداحل",
-//         "معدات تخطيط",
-//         "معدات رصف"
-//     ]
-// };
-
-// // نجيب الـ selects
-// const sellMainSelect = document.querySelector("#sell-main");
-// const sellSubSelect = document.querySelector("#sell-sub");
-
-// // تغيير التصنيف الرئيسي → تحديث الفرعي
-// sellMainSelect.addEventListener("change", () => {
-//     const selected = sellMainSelect.value;
-//     sellSubSelect.innerHTML = "";
-
-//     if (sellSubCategories[selected]) {
-//         sellSubCategories[selected].forEach(item => {
-//             const option = document.createElement("option");
-//             option.value = item;
-//             option.textContent = item;
-//             sellSubSelect.appendChild(option);
-//         });
-//     }
-//     sellMainSelect.dispatchEvent(new Event("change"));
-// });
 
 //! =========================== Section Filter ===========================
 document.addEventListener("DOMContentLoaded", function () {
@@ -459,16 +318,128 @@ function toggleFilter(el) {
     let content = el.nextElementSibling;
     content.style.display = content.style.display === "flex" ? "none" : "flex";
 }
-
 // filter box equipment end
 
 
-// !ايقاف ال AOS ف الموبايل 
-// if (window.innerWidth < 768) {
-//     AOS.init({
-//         disable: true
-//     });
-//     }
-//     else {
-//     AOS.init();
-// }
+//! =========================== Forms ===========================
+const data = {
+  cranes: {
+    "رافعة برجية": ["500 طن", "1000 طن", "1500 طن"],
+    "رافعة متنقلة": ["200 طن", "400 طن"]
+  },
+  loaders: {
+    "لودر صغير": ["2 طن", "3 طن"],
+    "لودر كبير": ["5 طن", "8 طن"]
+  },
+  excavation: {
+    "حفار جنزير": ["20 طن", "30 طن"],
+    "حفار بعجل": ["10 طن", "15 طن"]
+  }
+};
+
+/* ===========================
+   Select2 init on modal open
+=========================== */
+$('.modal').on('shown.bs.modal', function () {
+
+  const modal = this;
+  const selectedMulti = $(modal).find('.selectedMulti');
+
+  if (!selectedMulti.length) return;
+
+  if (!selectedMulti.hasClass("select2-hidden-accessible")) {
+    selectedMulti.select2({
+      placeholder: "المعدات المختارة",
+      width: "100%",
+      dropdownParent: $(modal),
+      closeOnSelect: false
+    });
+  }
+});
+
+/* ===========================
+   Dynamic selects logic
+=========================== */
+document.querySelectorAll(".modal").forEach((modal) => {
+
+  const categorySelect = modal.querySelector(".categorySelect");
+  const equipmentSelect = modal.querySelector(".equipmentSelect");
+  const weightSelect = modal.querySelector(".weightSelect");
+  const selectedMulti = modal.querySelector(".selectedMulti");
+
+  if (!categorySelect) return;
+
+  /* ---- Category change ---- */
+  categorySelect.addEventListener("change", function () {
+
+    equipmentSelect.innerHTML = '<option value="">اختر المعدات</option>';
+    weightSelect.innerHTML = '<option value="">اختر الوزن</option>';
+
+    equipmentSelect.disabled = true;
+    weightSelect.disabled = true;
+
+    const category = this.value;
+    if (!category || !data[category]) return;
+
+    equipmentSelect.disabled = false;
+
+    Object.keys(data[category]).forEach((equipment) => {
+      const option = document.createElement("option");
+      option.value = equipment;
+      option.textContent = equipment;
+      equipmentSelect.appendChild(option);
+    });
+  });
+
+  /* ---- Equipment change ---- */
+  equipmentSelect.addEventListener("change", function () {
+
+    weightSelect.innerHTML = '<option value="">اختر الوزن</option>';
+    weightSelect.disabled = true;
+
+    const category = categorySelect.value;
+    const equipment = this.value;
+
+    if (!equipment) return;
+
+    weightSelect.disabled = false;
+
+    data[category][equipment].forEach((weight) => {
+      const option = document.createElement("option");
+      option.value = weight;
+      option.textContent = weight;
+      weightSelect.appendChild(option);
+    });
+  });
+
+  /* ---- Weight selected (ADD DIRECTLY) ---- */
+  weightSelect.addEventListener("change", function () {
+
+    const category = categorySelect.value;
+    const equipment = equipmentSelect.value;
+    const weight = this.value;
+
+    if (!category || !equipment || !weight) return;
+
+    const value = `${equipment} - ${weight}`;
+
+    /* منع التكرار */
+    const exists = Array.from(selectedMulti.options)
+      .some(opt => opt.value === value);
+
+    if (!exists) {
+      const option = new Option(value, value, true, true);
+      selectedMulti.append(option);
+      $(selectedMulti).trigger("change");
+    }
+
+    /* Reset selects */
+    categorySelect.value = "";
+    equipmentSelect.innerHTML = '<option value="">اختر المعدات</option>';
+    weightSelect.innerHTML = '<option value="">اختر الوزن</option>';
+
+    equipmentSelect.disabled = true;
+    weightSelect.disabled = true;
+  });
+
+});

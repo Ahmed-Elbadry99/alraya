@@ -11,10 +11,10 @@
     <!-- bootstrap css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Owl Carousel CSS -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <!-- AOS library Css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <!-- Swiper CSS -->
@@ -63,7 +63,8 @@
                                 <i class="fas fa-users"></i>
                                 <a href="aboutus.html">من نحن</a>
                             </li>
-                            <li class="dropdown services direct-hover">
+
+                            <!-- <li class="dropdown services direct-hover">
                                 <i class="fas fa-concierge-bell"></i>
                                 <a href="#">
                                     الخدمات
@@ -73,7 +74,8 @@
                                     <li><a href="services.html">بيع</a></li>
                                     <li><a href="services-sell.html">تأجير</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
+
                             <li class="direct-hover">
                                 <i class="fas fa-tools"></i>
                                 <a href="equipment-filter.html">المعدات</a>
@@ -111,7 +113,7 @@
                         <div class="my-container">
                             <div class="logo">
                                 <a href="./index.html">
-                                    <img src="./assets/images/logo.svg" alt="">
+                                    <img src="./assets/images/logo.svg" alt="img">
                                 </a>
                             </div>
 
@@ -123,7 +125,7 @@
 
                                 <div class="lang-dropdown">
                                     <div class="lang-trigger">
-                                        <img src="./assets/images/en.svg" alt="">
+                                        <img src="./assets/images/en.svg" alt="img">
                                         <p>عربية</p>
                                     </div>
 
@@ -157,7 +159,7 @@
                                     <a href="aboutus.html">من نحن</a>
                                 </li>
 
-                                <li class="dropdown services direct-hover">
+                                <!-- <li class="dropdown services direct-hover">
                                     <a href="#">
                                         الخدمات
                                         <i class="fa-solid fa-caret-down"></i>
@@ -166,7 +168,7 @@
                                         <li><a href="services.html">بيع</a></li>
                                         <li><a href="services-sell.html">تأجير</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
 
                                 <li class="dropdown direct-hover">
                                     <a href="#">
@@ -177,7 +179,7 @@
                                     <div class="dropdown-menu equipment">
 
                                         <!-- Tabs الرئيسية -->
-                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
                                             <li class="nav-item" role="presentation">
                                                 <button class="nav-link active" id="rent-tab" data-bs-toggle="tab" data-bs-target="#rent" type="button">
                                                     ايجار
@@ -188,17 +190,14 @@
                                                     بيع
                                                 </button>
                                             </li>
-                                        </ul>
+                                        </ul> -->
 
                                         <!-- Tab content -->
                                         <div class="tab-content">
 
-                                            <!-- تاب الايجار -->
-                                            <div class="tab-pane fade show active" id="rent" role="tabpanel">
-
+                                            <!-- !الايجار -->
+                                            <!-- <div class="tab-pane fade show active" id="rent" role="tabpanel"> -->
                                                 <div class="boxs">
-
-                                                    <!-- أزرار Tabs -->
                                                     <div class="box first-box">
                                                         <ul class="nav flex-column" role="tablist">
 
@@ -241,7 +240,6 @@
                                                         </ul>
                                                     </div>
 
-                                                    <!-- المحتوى -->
                                                     <div class="box second-box tab-content">
 
                                                         <div class="tab-pane fade show active" id="rent-rafaat">
@@ -298,28 +296,15 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-
-                                                        <!-- <div class="tab-pane fade" id="rent-all">
-                                                            <ul>
-                                                                <li>رافعات</li>
-                                                                <li>لوادر</li>
-                                                                <li>معدات حفر</li>
-                                                                <li>حفارات</li>
-                                                                <li>جرارات</li>
-                                                            </ul>
-                                                        </div> -->
-
                                                     </div>
                                                 </div>
+                                            <!-- </div> -->
 
-                                            </div>
-
-                                            <!-- تاب البيع -->
-                                            <div class="tab-pane fade" id="sell" role="tabpanel">
+                                            <!-- !البيع -->
+                                            <!-- <div class="tab-pane fade" id="sell" role="tabpanel">
 
                                                 <div class="boxs">
 
-                                                    <!-- بيع -->
                                                     <div class="box first-box">
                                                         <ul class="nav flex-column">
 
@@ -362,7 +347,6 @@
                                                         </ul>
                                                     </div>
 
-                                                    <!-- بيع -->
                                                     <div class="box second-box tab-content">
 
                                                         <div class="tab-pane fade show active" id="sell-rafaat">
@@ -413,22 +397,11 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-
-                                                        <!-- <div class="tab-pane fade" id="sell-all">
-                                                            <ul>
-                                                                <li>رافعات</li>
-                                                                <li>لوادر</li>
-                                                                <li>معدات حفر</li>
-                                                                <li>حفارات</li>
-                                                                <li>جرارات</li>
-                                                            </ul>
-                                                        </div> -->
-
                                                     </div>
 
                                                 </div>
 
-                                            </div>
+                                            </div> -->
 
                                         </div>
                                     </div>
@@ -751,11 +724,11 @@
                                 <div class="group-inputs">
                                     <div class="select-group">
                                         <div class="arrow-icon">
-                                            <img src="./assets/images/arrow-bottom.svg" alt="">
+                                            <img src="./assets/images/arrow-bottom.svg" alt="img">
                                         </div>
                                         <label for="">نوع المشروع</label>
                                         <select>
-                                            <!-- <option value="اختر نوع المشروع" selected></option> -->
+                                            <option value="اختر نوع المشروع" selected></option>
                                             <option>مشاريع حفر</option>
                                             <option>مشاريع الطرق</option>
                                             <option>مشاريع البنية التحتية</option>
@@ -766,6 +739,49 @@
                                         <input type="number" id="number">
                                     </div>
                                 </div>
+                                <div class="group-inputs ">
+                                    <div class="select-group w-100">
+                                        <div class="arrow-icon">
+                                            <img src="./assets/images/arrow-bottom.svg" alt="img">
+                                        </div>
+                                        <label for="categorySelect">اختر تصنيف المعدة</label>
+                                        <select id="categorySelect" class="categorySelect">
+                                            <option value="">اختر تصنيف</option>
+                                            <option value="cranes">رافعات</option>
+                                            <option value="loaders">لوادر</option>
+                                            <option value="excavation">معدات حفر</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="group-inputs">
+                                    <div class="select-group">
+                                        <div class="arrow-icon">
+                                            <img src="./assets/images/arrow-bottom.svg" alt="img">
+                                        </div>
+                                        <label for="equipmentSelect">اختر المعدات</label>
+                                        <select id="equipmentSelect" class="equipmentSelect" disabled>
+                                            <option value="">اختر المعدات</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-group">
+                                        <div class="arrow-icon">
+                                            <img src="./assets/images/arrow-bottom.svg" alt="img">
+                                        </div>
+                                        <label for="weightSelect">اختر الوزن</label>
+                                        <select id="weightSelect" class="weightSelect" disabled >
+                                            <option value="">اختر الوزن</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="group-inputs">
+                                    <div class="select-group w-100">
+                                        <label for="selectedMulti">المعدات المختارة</label>
+                                        <select id="selectedMulti" class="selectedMulti" multiple="multiple"></select>
+                                    </div>
+                                </div>
+                                <!-- <div class="selected-items"></div> -->
+
+
                                 <div class="group-input location">
                                     <i class="fa-solid fa-location-dot"></i>
                                     <label for="location">ادخل الموقع</label>
@@ -828,28 +844,67 @@
                                 <div class="group-inputs">
                                     <div class="select-group">
                                         <div class="arrow-icon">
-                                            <img src="./assets/images/arrow-bottom.svg" alt="">
+                                            <img src="./assets/images/arrow-bottom.svg" alt="img">
                                         </div>
                                         <label for="">نوع الخدمة المطلوبة</label>
                                         <select>
-                                            <!-- <option value="اختر نوع المشروع" disabled selected></option> -->
-                                            <option>بيع</option>
-                                            <option>تاجير</option>
+                                            <option value="اختر نوع المشروع" selected></option>
+                                            <option>مشاريع حفر</option>
+                                            <option>مشاريع الطرق</option>
+                                            <option>مشاريع البنية التحتية</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-group">
+                                        <div class="arrow-icon">
+                                            <img src="./assets/images/arrow-bottom.svg" alt="img">
+                                        </div>
+                                        <label for="">مجال المشروع</label>
+                                        <select>
+                                            <option value="اختر نوع المشروع" selected></option>
+                                            <option>مشاريع حفر</option>
+                                            <option>مشاريع الطرق</option>
+                                            <option>مشاريع البنية التحتية</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="group-inputs ">
+                                    <div class="select-group w-100">
+                                        <div class="arrow-icon">
+                                            <img src="./assets/images/arrow-bottom.svg" alt="img">
+                                        </div>
+                                        <label for="categorySelect">اختر من التصنيفات الرئيسية</label>
+                                        <select id="categorySelect" class="categorySelect">
+                                            <option value="">اختر تصنيف</option>
+                                            <option value="cranes">رافعات</option>
+                                            <option value="loaders">لوادر</option>
+                                            <option value="excavation">معدات حفر</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="group-inputs">
                                     <div class="select-group">
                                         <div class="arrow-icon">
-                                            <img src="./assets/images/arrow-bottom.svg" alt="">
+                                            <img src="./assets/images/arrow-bottom.svg" alt="img">
                                         </div>
-                                        <label for="">مجال المشروع</label>
-                                        <select>
-                                            <!-- <option value="اختر نوع المشروع" disabled selected></option> -->
-                                            <option>مشاريع حفر</option>
-                                            <option>مشاريع الطرق</option>
-                                            <option>مشاريع البنية التحتية</option>
+                                        <label for="equipmentSelect">اختر المعدات</label>
+                                        <select id="equipmentSelect" class="equipmentSelect" disabled>
+                                            <option value="">اختر المعدات</option>
                                         </select>
+                                    </div>
+                                    <div class="select-group">
+                                        <div class="arrow-icon">
+                                            <img src="./assets/images/arrow-bottom.svg" alt="img">
+                                        </div>
+                                        <label for="weightSelect">اختر الوزن</label>
+                                        <select id="weightSelect" class="weightSelect" disabled>
+                                            <option value="">اختر الوزن</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="group-inputs">
+                                    <div class="select-group w-100">
+                                        <label for="selectedMulti">المعدات المختارة</label>
+                                        <select id="selectedMulti" class="selectedMulti" multiple="multiple"></select>
                                     </div>
                                 </div>
                                 <div class="textarea">
@@ -877,6 +932,8 @@
     <!-- Owl library js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- AOS library js -->

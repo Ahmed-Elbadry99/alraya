@@ -175,7 +175,6 @@
         transform: translateX(20px) !important;
     }
 
-
     /* ****************************************************** */
     h2.title {
         font-size: 18px;
@@ -188,9 +187,9 @@
     .row.cards-projects {
         gap: 0;
     }
-    /* .services-container {
-        flex-direction: column;
-    } */
+    .row.services-container {
+        gap: 50px;
+    }
     .row.items {
         gap: 20px;
     }

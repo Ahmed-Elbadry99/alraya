@@ -33,9 +33,13 @@ h3 {
 }
 .who-we-are .main-image {
     width: 340px;
+    height: 230px;
     margin: auto;
     position: relative;
     transition: .5s;
+}
+.who-we-are .main-image img {
+    height: 100%;
 }
 .who-we-are .main-image::before {
     content: "";
@@ -68,6 +72,13 @@ h3 {
     align-items: center;
     text-align: center;
     padding-block: 50px;
+}
+.card-aboutUs .image {
+    width: 300px;
+    height: 230px;
+}
+.card-aboutUs .image img {
+    height: 100%;
 }
 .card-aboutUs .info {
     display: flex;
