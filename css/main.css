@@ -1,10 +1,15 @@
 /*! ======================= Header ======================= */
-header,
+
+
 section {
     overflow: hidden;
 }
-header {
-    height: 100vh;
+#header {
+    min-height: 100vh;
+    overflow: hidden;
+}
+header.pages {
+    height: auto;
 }
 .row-hero {
     align-items: center;
@@ -45,7 +50,7 @@ header {
     background-color: #fff;
     top: -17px;
     right: -20px;
-    z-index: 9;
+    z-index: 8;
     transform: rotate(35deg);
 }
 .winch > img {
