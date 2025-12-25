@@ -579,43 +579,74 @@ select {
     font-weight: 800;
     color: var(--second-color);
 }
-.my-card .ul-container {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-.my-card .ul-container .labels-list,
-.my-card .ul-container .values-list {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-}
-.my-card .ul-container .labels-list p {
-    font-size: 14px;
-    color: #4B4B4B;
-}
-.my-card .ul-container .values-list span {
-    font-size: 13px;
-    font-weight: 700;
-}
-.my-card .ul-container img {
-    width: 15px;
-}
+
+
+
+
+
+
+/* ****************************** */
 .my-card .ul-container li {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
 }
-.my-card .ul-container .values-list li {
+.my-card .ul-container li .labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.my-card .ul-container li .values {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.my-card .ul-container li p {
-    padding: 0;
+.my-card .ul-container li span {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px;
 }
+.my-card .ul-container p {
+    font-size: 14px;
+    color: #4B4B4B;
+}
+.my-card .ul-container img {
+    width: 15px;
+}
+/* .my-card .ul-container .labels-list,
+.my-card .ul-container .values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+} */
+
+/* .my-card .ul-container .values-list span {
+    font-size: 13px;
+    font-weight: 700;
+} */
+
+/* .my-card .ul-container li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} */
+/* .my-card .ul-container .values-list li {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+/* .my-card .ul-container li p {
+    padding: 0;
+} */
+/* ****************************** */
+
+
+
 .my-card .footer {
     display: flex;
     justify-content: center;

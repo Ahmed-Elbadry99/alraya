@@ -1,4 +1,147 @@
 body {
     text-align: left;
     direction: ltr;
+    font-family: font_main;
 }
+
+@font-face {
+    font-family: "font_main";
+    src: url("../fonts/alfont_com_AlFont_com_BoutrosART-Medium\ \(1\).otf");
+}
+
+.winch {
+    margin-left: auto;
+    margin-right: 0;
+}
+.winch,
+.container-img {
+    transform: rotateY(180deg);
+}
+.container-img {
+    right: -60px;
+}
+.land {
+    right: 0;
+    left: inherit;
+}
+/* About */
+.about-img-container {
+    margin-right: 0;
+    margin-left: auto;
+}
+#about-us .info ul li::before {
+    left: 0;
+    right: inherit;
+}
+#about-us .info .main-btn {
+    margin-right: auto;
+    margin-left: 0;
+}
+/* projects */
+.cards-projects .my-card {
+    box-shadow: none;
+}
+/* blog */
+.card-blog {
+    flex-direction: row-reverse;
+}
+.card-blog .info .head-info .date {
+    justify-content: end;
+}
+/* our-partners */
+.our-partners {
+    padding-block: 80px !important;
+}
+/* contact-us */
+#contact-us ul li .text .phone {
+    text-align: start;
+}
+/* mailing-list */
+.mailing-list .image {
+    transform: rotateY(180deg);
+}
+.whatsapp-wrapper {
+    left: 50px;
+}
+/* footer */
+footer .content .body ul.links li:first-of-type a {
+    border-left: none;
+}
+.sub-title h2 span i {
+    transform: rotateY(180deg);
+}
+/* Filter */
+.equipment .filter-title::before {
+    right: 20px;
+    left: unset;
+    transform: translateY(-50%) rotate(-90deg);
+}
+.select-group .arrow-icon {
+    right: 16px;
+    left: unset;
+}
+#contact-us .main-title::before,
+#contact-us .main-title::after {
+    left: 0;
+}
+.lang-menu li a {
+    padding: 0;
+}
+
+/* ************ main.css (alllllllllllllll) ************ */
+/*! Navbar */
+nav .dropdown-menu li a {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+
+
+/* EN & AR */
+.custom-pagination a {
+    background-color: var(--main-color);
+    color: var(--color-white);
+    border-radius: 0;
+    width: 50px;
+    height: 50px;
+}
+.about-img-container .years-experience {
+    text-align: center;
+}
+.equipment .my-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#serviceRequest form,
+#priceRequest form {
+    gap: 32px;
+}
+input, form select,
+form textarea {
+    font-size: 10px !important;
+}
+
+
+
+
+
+
+
+
+/* *********** */
+/* nav .dropdown-menu li a,
+nav .boxs .box li button {
+    text-align: end;
+} */
+
+/* .card-blog {
+    text-align: end;
+    justify-content: space-between;
+} */
+
+/* *********** */
+/* .head-text h2 {
+    display: flex;
+    gap: 5px;
+} */
